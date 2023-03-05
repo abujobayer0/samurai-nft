@@ -1,13 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "Grand9K Pixel";
+  src: url("./fonts/Grand9K Pixel.ttf") format("truetype");
+  /* replace 'grand9k-pixel.ttf' with the actual file name and format */
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Grand9K Pixel", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #111111;
+  color: #fff9eb;
+}
+.font-clash {
+  font-family: "Clash Grotesk", sans-serif;
+}
+.clash-700 {
+  font-family: "Clash Grotesk", sans-serif;
+  font-weight: 700;
+}
+.clash-600 {
+  font-family: "Clash Grotesk", sans-serif;
+  font-weight: 600;
+}
+/* Primary  Button Customized */
+
+.pixel2,
+.childBtnSecondary,
+.SecondaryPixelBtn,
+.childBtn {
+  font-size: 25px;
+  color: white;
+  height: auto;
+  margin: 10px;
+  font-family: "VT323";
+
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.childBtn:active,
+.SecondaryPixelBtn:active,
+.childBtnSecondary:active,
+.pixel2:active {
+  top: 2px;
+}
+
+.pixel2,
+.childBtnSecondary,
+.SecondaryPixelBtn,
+.childBtn {
+  position: relative;
+  display: block;
+  margin: 4px;
+  font-family: "VT323";
+  text-transform: uppercase;
+  font-size: 25px;
+  color: white;
+}
+
+.pixel2::before,
+.SecondaryPixelBtn::before,
+.childBtnSecondary::before,
+.childBtn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: -10px;
+  right: -10px;
+  z-index: -1;
+}
+
+.pixel2::after,
+.SecondaryPixelBtn::after,
+.childBtnSecondary::after,
+.childBtn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: -6px;
+  right: -6px;
+  z-index: -1;
+}
+
+.pixel2,
+.childBtnSecondary,
+.SecondaryPixelBtn,
+.childBtn {
+  position: relative;
+  width: auto;
+  z-index: 2;
+}
+.pixel2 {
+  background-color: #aaaaaa;
+}
+.pixel2::after {
+  background-color: #aaaaaa;
+}
+.pixel2::before {
+  background-color: #aaaaaa;
+}
+.SecondaryPixelBtn {
+  background-color: #fff;
+}
+.SecondaryPixelBtn::after {
+  background-color: #fff;
+}
+.SecondaryPixelBtn::before {
+  background-color: #fff;
+}
+
+.childBtn {
+  background-color: #d40000;
+}
+.childBtn::after {
+  background-color: #d40000;
+}
+.childBtn::before {
+  background-color: #d40000;
+}
+.childBtnSecondary {
+  background-color: #111111;
+}
+.childBtnSecondary::after {
+  background-color: #111111;
+}
+.childBtnSecondary::before {
+  background-color: #111111;
+}
+.appleStore {
+  background: #a6a6a6;
+  transform: matrix(1, 0, 0, -1, 0, 0);
 }

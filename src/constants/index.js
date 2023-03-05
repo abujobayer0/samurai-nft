@@ -1,3 +1,11 @@
+import {
+  binance,
+  dextools,
+  googlePlay,
+  pinkSale,
+  yahooFinance,
+} from "../assets";
+
 const navLinks = [
   {
     id: "home",
@@ -74,5 +82,6 @@ const icons = [
     ),
   },
 ];
+const sponsers = [yahooFinance, googlePlay, binance, dextools, pinkSale];
 
-export { icons, navLinks };
+export { icons, navLinks, sponsers };

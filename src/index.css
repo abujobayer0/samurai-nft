@@ -176,3 +176,18 @@ body {
   background: #a6a6a6;
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
+/* scroll bar desigb for good look */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d40000;
+  border-radius: 10px;
+}

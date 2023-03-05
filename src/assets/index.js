@@ -4,4 +4,13 @@ import yahooFinance from "./yahooFinance.png";
 import binance from "./binance.png";
 import pinkSale from "./pinkSale.png";
 import dextools from "./dextools.png";
-export { Logo, dextools, pinkSale, yahooFinance, binance, googlePlay };
+import ImgAlien from "./imageAlien.png";
+export {
+  Logo,
+  dextools,
+  pinkSale,
+  ImgAlien,
+  yahooFinance,
+  binance,
+  googlePlay,
+};

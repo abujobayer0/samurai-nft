@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 const CommonSection = ({
   img,
@@ -8,13 +8,48 @@ const CommonSection = ({
   Designtitle,
   isThreeButton,
 }) => {
+  const sectionTwoRef = useRef(null);
+
+  const sectionOneRef = useRef(null);
+
+  useEffect(() => {
+    const sectionOne = sectionOneRef.current;
+    const sectionTwo = sectionTwoRef.current;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          sectionOne.style.transform = "translateX(0)";
+          sectionOne.style.opacity = 1;
+          sectionTwo.style.transform = "translateX(0)";
+          sectionTwo.style.opacity = 1;
+          console.log(entry);
+        } else {
+          sectionOne.style.transform = "translateX(-40%)";
+          sectionOne.style.opacity = 0;
+          sectionTwo.style.transform = "translateX(40%)";
+          sectionTwo.style.opacity = 0;
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    observer.observe(sectionTwo);
+
+    return () => {
+      observer.unobserve(sectionTwo);
+    };
+  }, []);
   return (
     <>
-      <section className="grid grid-cols-1 gap-10 md:grid-cols-2">
-        <div className="max-w-[511px] max-h-[734px]">
+      <section className="grid overflow-hidden grid-cols-1 gap-10 md:grid-cols-2">
+        <div
+          ref={sectionOneRef}
+          className="max-w-[511px] section section-1 max-h-[734px]"
+        >
           <img className="w-full" src={img} alt="img" />
         </div>
-        <div>
+        <div ref={sectionTwoRef} className="section section-2">
           {subTitle && (
             <h3 className="clash-700 text-[28px] lg:text-[38px]">{subTitle}</h3>
           )}

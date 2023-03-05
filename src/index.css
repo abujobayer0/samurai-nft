@@ -194,3 +194,13 @@ body {
 body.modal-open {
   overflow: hidden;
 }
+.section-2 {
+  transform: translateX(40%);
+  opacity: 0;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+.section-1 {
+  transform: translateX(-40%);
+  opacity: 0;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}

@@ -27,7 +27,7 @@ const CommonSection = ({
               {Designtitle}
             </h1>
           </div>
-          <p className="text-[16px]">{paragraph}</p>
+          <p className="text-[16px] text-[#BCBCBC] mt-4">{paragraph}</p>
         </div>
       </section>
     </>

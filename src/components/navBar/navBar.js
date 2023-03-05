@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Logo } from "../../assets";
 import { navLinks, icons } from "../../constants/";
 
@@ -7,6 +7,15 @@ const NavBar = () => {
   const handleToggle = () => {
     setToggle((prev) => !prev);
   };
+  useEffect(() => {
+    const body = document.querySelector("body");
+    if (toggle) {
+      body.classList.add("modal-open");
+    } else {
+      body.classList.remove("modal-open");
+    }
+  }, [toggle]);
+
   return (
     <div className="md:grid mx-auto px-5 sm:px-10  flex max-w-7xl justify-between md:grid-cols-3 pt-2 md:place-items-center md:place-content-center ">
       <div className=" hidden lg:flex items-center  w-full  gap-[21px] ">

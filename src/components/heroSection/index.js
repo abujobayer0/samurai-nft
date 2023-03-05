@@ -7,7 +7,7 @@ const HeroSection = () => {
         <h1 className="clash-700  leading-[78px] uppercase text-center text-[40px]  md:text-[50px] lg:text-[64px]">
           This world needs a samurai <br />
           <div className="relative pt-4  w-fit mx-auto text-center ">
-            <div className="bg-primary-text lg:w-[567px] md:w-[480px] w-[380px] h-[42px] lg:h-[62px] " />
+            <div className="bg-primary-text lg:w-[567px] md:w-[450px] w-[350px] h-[42px] lg:h-[62px] " />
             <h1 className=" bg-transparent absolute bottom-0 lg:bottom-2">
               are you ready?
             </h1>

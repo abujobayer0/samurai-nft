@@ -5,7 +5,7 @@ const Button = ({ isSecondary, title }) => {
     <div>
       {!isSecondary ? (
         <button className="pixel2 ">
-          <span className={`  px-[32px] py-[10px] childBtn`}>play now</span>
+          <span className={`  px-[32px] py-[10px]  childBtn`}>{title}</span>
         </button>
       ) : (
         <button className="SecondaryPixelBtn ">

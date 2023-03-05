@@ -3,17 +3,17 @@ import googlePlayStoreLogo from "../../assets/googlePlayStoreLogo.webp";
 const HeroSection = () => {
   return (
     <>
-      <section className="mt-[62px] mx-auto max-w-7xl px-10">
-        <h1 className="clash-700  leading-[78px] uppercase text-center text-[40px]  md:text-[50px] lg:text-[64px]">
+      <section className="mt-[62px] mx-auto max-w-7xl px-5 sm:px-10">
+        <h1 className="clash-700  md:leading-[78px] uppercase text-center text-[30px] sm:text-[40px]  md:text-[45px] lg:text-[64px]">
           This world needs a samurai <br />
-          <div className="relative pt-4  w-fit mx-auto text-center ">
-            <div className="bg-primary-text lg:w-[567px] md:w-[450px] w-[350px] h-[42px] lg:h-[62px] " />
-            <h1 className=" bg-transparent absolute bottom-0 lg:bottom-2">
+          <div className="relative pt-4  w-full flex flex-col justify-center items-center mx-auto text-center ">
+            <div className="bg-primary-text  w-[240px] sm:w-[320px] h-[30px] lg:w-[567px] md:w-[450px] md:h-[52px] lg:h-[62px] " />
+            <h1 className=" bg-transparent absolute bottom-2 lg:bottom-2">
               are you ready?
             </h1>
           </div>
         </h1>
-        <p className="uppercase text-[14px] sm:text-[16px]  mt-[16px] text-center leading-[30px]">
+        <p className="uppercase text-[12px] sm:text-[16px]  mt-[16px] text-center leading-[30px]">
           Enter the world of 0xSamurai, where ordinary warriors are
           non-existent, and only legendary samurais who have mastered the art of
           combat exist. They don't just fight for glory but for the rarest and
@@ -22,15 +22,15 @@ const HeroSection = () => {
           battle arena.
         </p>
         <div className="w-full flex flex-col mx-auto justify-center items-center">
-          <div className="w-full flex mx-auto justify-center items-center gap-6 mt-10">
+          <div className="w-full flex mx-auto justify-center min-w-3xl items-center gap-6 mt-10">
             <Button title={"Play now"} />
             <Button title={"learn more"} isSecondary />
           </div>
           <div className="flex mx-auto justify-center items-center w-full gap-2 mt-10">
-            <button className="flex w-[180px] h-[52px] items-center border-2 px-[17px] rounded-xl gap-2 py-[9px]">
+            <button className="flex  w-[180px] h-[52px] items-center border-2 px-4 md:pl-[17px] rounded-xl gap-2 py-[9px]">
               <svg
-                width="27"
-                height="27"
+                width="24"
+                height="24"
                 viewBox="0 0 29 34"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -45,15 +45,21 @@ const HeroSection = () => {
                 />
               </svg>
               <p className="font-clash flex flex-col justify-start items-start">
-                <span className="text-xs">Download on the</span>
-                <h2 className="text-lg font-semibold">App Store</h2>
+                <span className="text-[8px] md:text-xs lg:text-sm gap-1 flex ">
+                  Download on <span className="hidden lg:block"> the</span>{" "}
+                </span>
+                <h2 className="text-[12px] md:text-sm font-semibold">
+                  App Store
+                </h2>
               </p>
             </button>
             <button className="flex  w-[180px] h-[52px] items-center border-2 px-[17px] rounded-xl gap-2 py-[9px]">
-              <img className="w-6" src={googlePlayStoreLogo} alt="icon" />
+              <img className="w-[18px]" src={googlePlayStoreLogo} alt="icon" />
               <p className="font-clash flex flex-col justify-start items-start ">
-                <span className="text-xs uppercase">Get it on</span>
-                <h2 className="text-lg font-semibold">Google Play</h2>
+                <span className="text-[8px] md:text-sm ">Get it on</span>
+                <h2 className="text-[12px] md:text-lg  font-semibold">
+                  Google Play
+                </h2>
               </p>
             </button>
           </div>

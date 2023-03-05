@@ -1,11 +1,12 @@
 import React from "react";
-import { HeroSection, NavBar } from "./components";
+import { FeaturedSection, HeroSection, NavBar } from "./components";
 
 const App = () => {
   return (
     <>
       <NavBar />
       <HeroSection />
+      <FeaturedSection />
     </>
   );
 };

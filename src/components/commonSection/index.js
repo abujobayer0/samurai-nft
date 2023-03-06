@@ -19,13 +19,13 @@ const CommonSection = ({
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          sectionOne.style.transform = "translateX(0)";
+          sectionOne.style.transform = "translateY(0)";
           sectionOne.style.opacity = 1;
           sectionTwo.style.transform = "translateX(0)";
           sectionTwo.style.opacity = 1;
           console.log(entry);
         } else {
-          sectionOne.style.transform = "translateX(-40%)";
+          sectionOne.style.transform = "translateY(40%)";
           sectionOne.style.opacity = 0;
           sectionTwo.style.transform = "translateX(40%)";
           sectionTwo.style.opacity = 0;

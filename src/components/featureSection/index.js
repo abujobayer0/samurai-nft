@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { sponsers } from "../../constants";
 import { ImgAlien } from "../../assets";
 import { CommonSection } from "../";
@@ -19,7 +19,6 @@ const FeaturedSection = () => {
           title={"The Team and the "}
           subTitle={"About us"}
           Designtitle={"Narrative"}
-          order={"flex-row"}
           paragraph={
             "At 0xSamurai, we are dedicated to providing a secure and exciting gaming experience for our players. Our team consists of experienced developers and gaming enthusiasts who have crafted an immersive game that allows players to collect rare NFTs and compete in the battle arena. We take the security of our players' assets seriously, which is why our smart contract has undergone a thorough third-party audit. Additionally, our KYC process ensures that all players are on  a safe platform and protected from fraud. Join us on this adventure and unleash the samurai's might!"
           }

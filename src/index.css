@@ -250,3 +250,7 @@ body {
 body.modal-open {
   overflow: hidden;
 }
+.active {
+  background-color: #ec1c24;
+  transition: all 0.5s ease;
+}

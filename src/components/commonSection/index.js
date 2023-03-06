@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { Button } from "../";
 const CommonSection = ({
   img,
@@ -37,7 +37,7 @@ const CommonSection = ({
               {Designtitle}
             </h1>
           </div>
-          <p className="text-[16px] text-[#BCBCBC] mt-4">{paragraph}</p>
+          <p className="text-[16px]  text-[#BCBCBC] mt-4">{paragraph}</p>
           {isThreeButton && (
             <div className="flex px-2  flex-wrap gap-4 space-x-1 lg:gap-10 mt-10 justify-start items-center">
               <Button isSecondary title={btnOneTitle} />

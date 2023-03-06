@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Button } from "../";
 const TabContent = ({
   title,
   paragraph,
@@ -8,6 +8,7 @@ const TabContent = ({
   isLeaf,
   isPsyhic,
   isWater,
+  btn,
   isSky,
   img,
 }) => {
@@ -23,10 +24,11 @@ const TabContent = ({
               isLeaf ? "leaf-effect" : ""
             } ${isPsyhic ? "psyhic-effect" : ""} ${
               isWater ? "water-effect" : ""
-            } ${isSky ? "sky-effect" : ""}`}
+            } ${isSky ? "sky-effect" : ""} mb-5`}
           >
             {paragraph}
           </p>
+          <Button icon={icon} title={btn} />
         </div>
         <div className="lg:max-w-[510px] sm:mt-1 md:mt-16 lg:mt-0 relative md:max-w-[335px] md:max-h-[524px] max-w-[240px] mx-auto h-[300px] lg:max-h-[700px] flex justify-center items-center">
           <div

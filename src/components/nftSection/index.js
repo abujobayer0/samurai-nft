@@ -29,6 +29,7 @@ const NftSection = () => {
               }
               icon={FireIcon}
               img={hagonImg}
+              btn={"fire"}
             />
           }
           tabTwo={
@@ -40,6 +41,7 @@ const NftSection = () => {
               }
               icon={LeafIcon}
               img={MizuImg}
+              btn={"leaf"}
             />
           }
           tabThree={
@@ -49,6 +51,7 @@ const NftSection = () => {
                 "The members of the Kaze clan are known for their extraordinary psychic abilities, allowing them to manipulate their opponents' minds and predict their every move. With their sharp intuition and mental acuity, Kaze clan members are the ultimate mind readers and strategists on the battlefield. They can unleash a flurry of psychic attacks that can shatter their opponents' psyche and leave them confused and disoriented. No one can match the Kaze clan's mastery of the mind, making them one of the most feared and respected clans"
               }
               title={"Kaze"}
+              btn={"psyhic"}
               icon={PsyhicIcon}
               img={KazeImg}
             />
@@ -61,6 +64,7 @@ const NftSection = () => {
               }
               title={"Tsuchi"}
               icon={WaterIcon}
+              btn={"water"}
               img={TsuchiImg}
             />
           }
@@ -72,6 +76,7 @@ const NftSection = () => {
               }
               title={"Denki"}
               icon={SkyIcon}
+              btn={"sky"}
               img={DenkiImg}
             />
           }

@@ -30,6 +30,10 @@ body {
 /* Primary  Button Customized */
 
 .pixel2,
+.blueBtn,
+.childBlueBtn,
+.greenBtn,
+.childGreenBtn,
 .childBtnSecondary,
 .SecondaryPixelBtn,
 .childBtn {
@@ -55,6 +59,10 @@ body {
 }
 
 .childBtn:active,
+.childBlueBtn:active,
+.childGreenBtn:active,
+.blueBtn:active,
+.greenBtn:active,
 .SecondaryPixelBtn:active,
 .childBtnSecondary:active,
 .pixel2:active {
@@ -62,8 +70,12 @@ body {
 }
 
 .pixel2,
+.blueBtn,
+.childGreenBtn,
 .childBtnSecondary,
 .SecondaryPixelBtn,
+.greenBtn,
+.childBlueBtn,
 .childBtn {
   position: relative;
   display: block;
@@ -76,7 +88,11 @@ body {
 }
 @media only screen and (max-width: 600px) {
   .pixel2,
+  .blueBtn,
   .childBtnSecondary,
+  .childBlueBtn,
+  .childGreenBtn,
+  .greenBtn,
   .SecondaryPixelBtn,
   .childBtn {
     font-size: 19px;
@@ -84,14 +100,22 @@ body {
 }
 @media only screen and (max-width: 400px) {
   .pixel2,
+  .blueBtn,
   .childBtnSecondary,
+  .greenBtn,
   .SecondaryPixelBtn,
+  .childGreenBtn,
+  .childBlueBtn,
   .childBtn {
     font-size: 16px;
   }
 }
 @media only screen and (max-width: 300px) {
   .pixel2,
+  .blueBtn,
+  .childBlueBtn,
+  .greenBtn,
+  .childGreenBtn,
   .childBtnSecondary,
   .SecondaryPixelBtn,
   .childBtn {
@@ -100,6 +124,10 @@ body {
 }
 
 .pixel2::before,
+.blueBtn::before,
+.greenBtn::before,
+.childGreenBtn::before,
+.childBlueBtn::before,
 .SecondaryPixelBtn::before,
 .childBtnSecondary::before,
 .childBtn::before {
@@ -114,6 +142,10 @@ body {
 }
 
 .pixel2::after,
+.blueBtn::after,
+.greenBtn::after,
+.childGreenBtn::after,
+.childBlueBtn::after,
 .SecondaryPixelBtn::after,
 .childBtnSecondary::after,
 .childBtn::after {
@@ -128,7 +160,11 @@ body {
 }
 
 .pixel2,
+.childBlueBtn,
+.blueBtn,
+.greenBtn,
 .childBtnSecondary,
+.childGreenBtn,
 .SecondaryPixelBtn,
 .childBtn {
   position: relative;
@@ -144,13 +180,19 @@ body {
 .pixel2::before {
   background-color: #aaaaaa;
 }
-.SecondaryPixelBtn {
+.SecondaryPixelBtn,
+.blueBtn,
+.greenBtn {
   background-color: #fff;
 }
-.SecondaryPixelBtn::after {
+.SecondaryPixelBtn::after,
+.blueBtn::after,
+.greenBtn::after {
   background-color: #fff;
 }
-.SecondaryPixelBtn::before {
+.SecondaryPixelBtn::before,
+.blueBtn::before,
+.greenBtn::before {
   background-color: #fff;
 }
 
@@ -163,6 +205,15 @@ body {
 .childBtn::before {
   background-color: #d40000;
 }
+.childBlueBtn {
+  background-color: #2461ff;
+}
+.childBlueBtn::after {
+  background-color: #2461ff;
+}
+.childBlueBtn::before {
+  background-color: #2461ff;
+}
 .childBtnSecondary {
   background-color: #111111;
 }
@@ -172,35 +223,30 @@ body {
 .childBtnSecondary::before {
   background-color: #111111;
 }
+
+.childGreenBtn {
+  background-color: #1cb219;
+}
+.childGreenBtn::after {
+  background-color: #1cb219;
+}
+.childGreenBtn::before {
+  background-color: #1cb219;
+}
 .appleStore {
   background: #a6a6a6;
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
-/* scroll bar desigb for good look */
 ::-webkit-scrollbar {
   width: 6px;
 }
-
-/* Track */
 ::-webkit-scrollbar-track {
   border-radius: 10px;
 }
-
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #d40000;
   border-radius: 10px;
 }
 body.modal-open {
   overflow: hidden;
-}
-.section-2 {
-  transform: translateX(40%);
-  opacity: 0;
-  transition: transform 1s ease-out, opacity 1s ease-out;
-}
-.section-1 {
-  transform: translateY(-40%);
-  opacity: 0;
-  transition: transform 1s ease-out, opacity 1s ease-out;
 }

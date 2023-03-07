@@ -8,6 +8,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 body {
   margin: 0;
   font-family: "Grand9K Pixel", sans-serif;
@@ -16,6 +17,7 @@ body {
   background-color: #111111;
   color: #fff9eb;
 }
+
 .font-clash {
   font-family: "Clash Grotesk", sans-serif;
 }
@@ -382,28 +384,13 @@ body {
 }
 
 .DenkiBtn::before {
-  background: linear-gradient(
-    267.25deg,
-    #edc174 1.12%,
-    #f5c167 57.43%,
-    #c4bfb5 100.31%
-  );
+  background: linear-gradient(85.91deg, #ff3030 -4.96%, #e6dd0f 95%);
 }
 .DenkiBtn::after {
-  background: linear-gradient(
-    267.25deg,
-    #edc174 1.12%,
-    #f5c167 57.43%,
-    #c4bfb5 100.31%
-  );
+  background: linear-gradient(85.91deg, #ff3030 -4.96%, #e6dd0f 95%);
 }
 .DenkiBtn {
-  background: linear-gradient(
-    267.25deg,
-    #edc174 1.12%,
-    #f5c167 57.43%,
-    #c4bfb5 100.31%
-  );
+  background: linear-gradient(85.91deg, #ff3030 -4.96%, #e6dd0f 95%);
 }
 /* i am working on button color now */
 .appleStore {
@@ -411,10 +398,10 @@ body {
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 0px;
 }
 ::-webkit-scrollbar-track {
-  border-radius: 10px;
+  border-radius: 0px;
 }
 ::-webkit-scrollbar-thumb {
   background: #d40000;
@@ -458,7 +445,6 @@ body.modal-open {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .leaf-text-btn {
   background: linear-gradient(92.72deg, #3fbf1b -3.17%, #cfa908 96.95%);
   -webkit-background-clip: text;
@@ -471,17 +457,6 @@ body.modal-open {
 }
 .Tsuchi-gradient {
   background: linear-gradient(87.44deg, #5a64ea -0.29%, #ffffff 92.12%);
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.denki-gradient {
-  background: linear-gradient(
-    267.25deg,
-    #edc174 1.12%,
-    #f5c167 57.43%,
-    #c4bfb5 100.31%
-  );
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -523,4 +498,28 @@ body.modal-open {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 16px;
+}
+
+.scroll-section-outer {
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-section-inner {
+  height: 60vh;
+  width: 500vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+}
+
+.scroll-section {
+  height: 60vh;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

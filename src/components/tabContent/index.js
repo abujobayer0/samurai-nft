@@ -1,44 +1,47 @@
 import React from "react";
 import { Button } from "../";
-const TabContent = ({
-  title,
-  paragraph,
-  icon,
-  isFire,
-  isLeaf,
-  isPsyhic,
-  isWater,
-  btn,
-  isSky,
-  img,
-}) => {
+const TabContent = ({ title, paragraph, icon, btn, img, condition }) => {
   return (
     <>
-      <section className="grid gap-16  grid-cols-1 tab-content max-h-[724px] max-w-full relative lg:pt-44 md:mt-20  mt-16 md:grid-cols-2">
+      {/* <div className="  "> */}
+      <section className="grid z-50 gap-16  grid-cols-1 tab-content max-h-[724px] max-w-full relative lg:pt-44 md:mt-20 mx-10 lg:mx-20  mt-16 lg:mt-1 md:grid-cols-2">
         <div className="order-2 md:order-none">
-          <h1 className="clash-700 mb-5  leading-[78px] text-[30px] sm:text-[40px]  md:text-[45px] lg:text-[60px]">
+          <h1 className="clash-700 mb-0  leading-[78px] text-[30px] sm:text-[40px]  md:text-[45px] lg:text-[60px]">
             {title}
           </h1>
           <p
-            className={`${isFire ? "fire-effect" : ""} ${
-              isLeaf ? "leaf-effect" : ""
-            } ${isPsyhic ? "psyhic-effect" : ""} ${
-              isWater ? "water-effect" : ""
-            } ${isSky ? "sky-effect" : ""} mb-5`}
+            className={`${condition === "isFire" ? "fire-effect" : ""} ${
+              condition === "isLeaf" ? "leaf-effect" : ""
+            } ${condition === "isPsyhic" ? "psyhic-effect" : ""} ${
+              condition === "isWater" ? "water-effect" : ""
+            } ${
+              condition === "isSky" ? "sky-effect" : ""
+            } mb-5 max-w-2xl text-sm`}
           >
             {paragraph}
           </p>
           <Button icon={icon} title={btn} />
         </div>
-        <div className="lg:max-w-[510px] sm:mt-1 md:mt-16 lg:mt-0 relative md:max-w-[335px] md:max-h-[524px] max-w-[240px] mx-auto h-[300px] lg:max-h-[700px] flex justify-center items-center">
+        <div className="lg:max-w-[410px] sm:mt-1 md:mt-16 lg:mt-0 relative md:max-w-[335px] md:max-h-[524px] max-w-[240px] mx-auto h-[300px] lg:max-h-[600px] flex justify-center items-center">
           <div
-            className={`lg:w-[510px]  md:w-[338px] md:h-[338px] bottom-0 md:top-0 lg:bottom-0 w-[250px] h-[250px] lg:h-[510px]  absolute  -z-10   mx-auto sm:rounded-[50px] rounded-[40px] lg:rounded-[81px] ${
-              isFire && "bg-gradient-to-t from-orange-600 to-red-600"
+            className={`lg:w-[410px]  md:w-[338px] md:h-[338px] bottom-0 md:top-0 lg:bottom-0 w-[250px] h-[250px] lg:h-[410px]  absolute  -z-10   mx-auto sm:rounded-[50px] rounded-[40px] lg:rounded-[81px] ${
+              condition === "isFire" &&
+              "bg-gradient-to-t from-orange-600 to-red-600"
             }
-             ${isLeaf && "bg-gradient-to-t to-green-500 from-yellow-600"} 
-             ${isPsyhic && "bg-gradient-to-t from-yellow-400 to-orange-500"} ${
-              isWater && "bg-gradient-to-b from-indigo-400 to-orange-400"
-            } ${isSky && "bg-gradient-to-b from-gray-400 to-yellow-300"}`}
+             ${
+               condition === "isLeaf" &&
+               "bg-gradient-to-t to-green-500 from-yellow-600"
+             } 
+             ${
+               condition === "isPsyhic" &&
+               "bg-gradient-to-t from-yellow-400 to-orange-500"
+             } ${
+              condition === "isWater" &&
+              "bg-gradient-to-b from-indigo-400 to-orange-400"
+            } ${
+              condition === "isSky" &&
+              "bg-gradient-to-b from-gray-400 to-yellow-300"
+            }`}
           ></div>
           {!img ? (
             <div className="preloader">
@@ -54,6 +57,7 @@ const TabContent = ({
           )}
         </div>
       </section>
+      {/* </div> */}
     </>
   );
 };

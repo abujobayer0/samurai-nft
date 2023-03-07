@@ -55,7 +55,7 @@ const Button = ({ isSecondary, title, isBlue, isGreen, icon }) => {
         </button>
       ) : title === "sky" ? (
         <button className="DenkiBtn">
-          <span className={`  px-[32px] py-[10px]  DenkiNft`}>
+          <span className={`px-[32px] py-[10px]  DenkiNft`}>
             <span className="denki-gradient flex w-full justify-between items-center gap-2">
               <img src={icon} alt="" />
               {title}

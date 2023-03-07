@@ -33,7 +33,9 @@ const StepsSection = () => {
           <span>10 gold</span>
         </div>
       </div>
-      <Button isSecondary title={"learn more"} />
+      <div className="mt-10 lg:mt-0">
+        <Button isSecondary title={"learn more"} />
+      </div>
     </div>
   );
 };

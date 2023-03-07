@@ -383,13 +383,28 @@ body {
 }
 
 .DenkiBtn::before {
-  background: linear-gradient(85.91deg, #ff3030 -4.96%, #e6dd0f 95%);
+  background: linear-gradient(
+    267.25deg,
+    #edc174 1.12%,
+    #f5c167 57.43%,
+    #c4bfb5 100.31%
+  );
 }
 .DenkiBtn::after {
-  background: linear-gradient(85.91deg, #ff3030 -4.96%, #e6dd0f 95%);
+  background: linear-gradient(
+    267.25deg,
+    #edc174 1.12%,
+    #f5c167 57.43%,
+    #c4bfb5 100.31%
+  );
 }
 .DenkiBtn {
-  background: linear-gradient(85.91deg, #ff3030 -4.96%, #e6dd0f 95%);
+  background: linear-gradient(
+    267.25deg,
+    #edc174 1.12%,
+    #f5c167 57.43%,
+    #c4bfb5 100.31%
+  );
 }
 /* i am working on button color now */
 .appleStore {
@@ -486,17 +501,11 @@ body.modal-open {
   -webkit-text-fill-color: transparent;
   font-size: 16px;
 }
-.sky-effect {
-  background: linear-gradient(
-    267.25deg,
-    #edc174 1.12%,
-    #f5c167 57.43%,
-    #c4bfb5 100.31%
-  );
+.denki-gradient {
+  background: linear-gradient(95.23deg, #e6d710 0.81%, #c5994e 103.1%);
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 16px;
 }
 
 .scroll-section-outer {

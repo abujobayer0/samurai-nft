@@ -16,10 +16,10 @@ const HorizentalScroll = () => {
     const pin = gsap.fromTo(
       sectionRef.current,
       {
-        translateX: 0,
+        translateX: "0vw",
       },
       {
-        translateX: "-500vw",
+        translateX: "-400vw",
         ease: "none",
         duration: 1,
         scrollTrigger: {
@@ -44,7 +44,10 @@ const HorizentalScroll = () => {
         <div ref={triggerRef}>
           <div ref={sectionRef} className="scroll-section-inner">
             {tabsDetail.map((tab, indx) => (
-              <div key={indx} className="scroll-section">
+              <div
+                key={indx}
+                className="scroll-section z-50 mx-auto lg:pr-96 xl:pr-[20vw] 2xl:pr-[50vw] h-screen"
+              >
                 <TabContent
                   key={indx}
                   title={tab.title}

@@ -102,6 +102,7 @@ const tabsDetail = [
     icon: FireIcon,
     img: hagonImg,
     btn: "fire",
+    id: 1,
   },
   {
     title: "Mizu",
@@ -111,6 +112,7 @@ const tabsDetail = [
     icon: LeafIcon,
     img: MizuImg,
     btn: "leaf",
+    id: 2,
   },
   {
     title: "Kaze",
@@ -120,6 +122,7 @@ const tabsDetail = [
     icon: PsyhicIcon,
     img: KazeImg,
     btn: "psyhic",
+    id: 3,
   },
   {
     title: "Tsuchi",
@@ -129,6 +132,7 @@ const tabsDetail = [
     icon: WaterIcon,
     img: TsuchiImg,
     btn: "water",
+    id: 4,
   },
   {
     title: "Denki",
@@ -138,6 +142,7 @@ const tabsDetail = [
     icon: SkyIcon,
     img: DenkiImg,
     btn: "sky",
+    id: 5,
   },
 ];
 export { icons, tabsDetail, navLinks, sponsers };

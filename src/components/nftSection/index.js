@@ -49,7 +49,7 @@ const NftSection = () => {
         <div>
           <TabNav />
         </div>
-        <div className="flex flex-col  lg:gap-32">
+        <div className="flex flex-col justify-center items-center  lg:gap-32">
           <div className="relative">
             <HorizentalScroll />
 

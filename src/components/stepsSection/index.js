@@ -3,7 +3,7 @@ import { StepsLine } from "../../assets";
 import { Button } from "../";
 const StepsSection = () => {
   return (
-    <div className="w-full  transition duration-150 ease-in-out flex flex-col justify-start items-start  bg-transparent">
+    <div className="w-full -z-30  transition duration-150 ease-in-out flex flex-col justify-start items-start  bg-transparent">
       <h1 className="clash-700 mb-5 text-start md:mb-[30px] lg:mb-[70px] leading-[78px] text-[30px] sm:text-[40px]  md:text-[45px] lg:text-[60px]">
         H<span className="bg-[#EC1C24] pr-8 lg:pr-12">ierarchy</span>
       </h1>

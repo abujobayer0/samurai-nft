@@ -50,7 +50,7 @@ const TabContent = ({ title, paragraph, icon, btn, img, condition }) => {
           ) : (
             <img
               loading="lazy"
-              className="max-w-full   mx-auto"
+              className="max-w-full  z-30 mx-auto"
               src={img}
               alt=""
             />

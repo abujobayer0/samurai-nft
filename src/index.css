@@ -15,6 +15,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #111111;
   color: #fff9eb;
+  overflow-x: hidden;
 }
 
 .font-clash {
@@ -518,9 +519,9 @@ body.modal-open {
   width: 500vw;
   display: flex;
   padding: 30px;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: #111111;
-  align-items: start;
+  align-items: flex-start;
   flex-direction: row;
   position: relative;
 }
@@ -529,6 +530,7 @@ body.modal-open {
   height: 60vh;
   max-width: 100%;
   margin: auto;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -561,4 +563,23 @@ body.modal-open {
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(50%); /* Start at 0% */
+  }
+  50% {
+    transform: translateX(-50%); /* End at -100% */
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+/* Apply the animation to the container */
+.flex-container {
+  animation: slide 20s linear infinite; /* Apply the animation */
+}
+.border-custom {
+  border-radius: 216px 183px 167px 189px / 145px 149px 150px 146px;
 }

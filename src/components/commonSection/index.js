@@ -19,11 +19,14 @@ const CommonSection = ({
         <div
           className={`max-w-[511px] ${
             orderRev && "order-2"
-          }  section section-1 max-h-[734px]`}
+          }  section section-1 flex justify-center  items-center overflow-hidden max-h-[734px]`}
         >
-          <img className="w-full" src={img} alt="img" />
+          {/* <div className=" md:w-[240] lg:w-[400px]  mx-auto relative rounded-full md:h-[380px] lg:h-[500px]"> */}
+          <img className="w-full h-full " src={img} alt="img" />
+          {/* </div> */}
         </div>
-
+        {/* rounded-full object-cover
+        -rotate-45 */}
         <div className="section section-2">
           {subTitle && (
             <h3 className="clash-700 text-[28px] lg:text-[38px]">{subTitle}</h3>

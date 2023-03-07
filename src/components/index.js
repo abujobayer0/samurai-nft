@@ -8,8 +8,12 @@ import NftSection from "./nftSection";
 import HorizentalScroll from "./HorizentalScroll";
 import TabContent from "./tabContent";
 import TabNav from "./tabNav";
+import Title from "./title";
+import CoinTab from "./coinTab";
 export {
+  CoinTab,
   TabNav,
+  Title,
   TabContent,
   HorizentalScroll,
   NftSection,

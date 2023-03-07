@@ -26,7 +26,7 @@ const HorizentalScroll = () => {
           trigger: triggerRef.current,
           start: "top 100",
           end: "2000 top",
-          scrub: 0.3,
+          scrub: 0.6,
           pin: true,
         },
       }

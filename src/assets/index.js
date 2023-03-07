@@ -16,8 +16,12 @@ import PsyhicIcon from "./psyhicIconBtn.png";
 import WaterIcon from "./waterIconBtn.png";
 import SkyIcon from "./skyIconBtn.png";
 import StepsLine from "./stepsLine.png";
+import GoldCoin from "./goldCoin.png";
+import RioCoin from "./rioCoin.png";
 export {
   Logo,
+  RioCoin,
+  GoldCoin,
   dextools,
   FireIcon,
   StepsLine,

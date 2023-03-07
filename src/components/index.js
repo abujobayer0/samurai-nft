@@ -10,8 +10,14 @@ import TabContent from "./tabContent";
 import TabNav from "./tabNav";
 import Title from "./title";
 import CoinTab from "./coinTab";
+import Faq from "./FAQ";
+import Footer from "./footer";
+import SocialSectionFooter from "./socialSectionFooter";
 export {
   CoinTab,
+  Footer,
+  SocialSectionFooter,
+  Faq,
   TabNav,
   Title,
   TabContent,

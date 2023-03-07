@@ -5,7 +5,7 @@ const CurrencySection = () => {
   const [tab, setTab] = useState(0);
   return (
     <div>
-      <div className="max-w-7xl    px-5 lg:px-10   transition duration-150 ease-in-out flex flex-col justify-start items-start mx-auto  bg-transparent">
+      <div className="max-w-7xl    px-5 lg:px-10  mb-20 transition duration-150 ease-in-out flex flex-col justify-start items-start mx-auto  bg-transparent">
         <Title head={"The"} sub={"Currency"} />
         <ul className="lg:w-[510px]  md:w-[400px] w-[200px] px-4 clash-700 flex transition duration-150 ease-linear items-center justify-around rounded-full bg-[#212121]">
           <button onClick={() => setTab(0)}>

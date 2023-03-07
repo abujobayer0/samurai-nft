@@ -18,9 +18,17 @@ import SkyIcon from "./skyIconBtn.png";
 import StepsLine from "./stepsLine.png";
 import GoldCoin from "./goldCoin.png";
 import RioCoin from "./rioCoin.png";
+import TwitterIcon from "./twitterIcon.png";
+import TelegramIcon from "./TelegramIco.png";
+import GitBookIcon from "./gitbookIcon.png";
+import FooterGradinet from "./gradientFooter.png";
 export {
   Logo,
   RioCoin,
+  FooterGradinet,
+  TelegramIcon,
+  GitBookIcon,
+  TwitterIcon,
   GoldCoin,
   dextools,
   FireIcon,

@@ -1,5 +1,12 @@
 import React from "react";
-import { FeaturedSection, HeroSection, NavBar, NftSection } from "./components";
+import {
+  Faq,
+  FeaturedSection,
+  Footer,
+  HeroSection,
+  NavBar,
+  NftSection,
+} from "./components";
 import CurrencySection from "./components/currencySection";
 
 const App = () => {
@@ -10,6 +17,8 @@ const App = () => {
       <FeaturedSection />
       <NftSection />
       <CurrencySection />
+      <Faq />
+      <Footer />
     </>
   );
 };

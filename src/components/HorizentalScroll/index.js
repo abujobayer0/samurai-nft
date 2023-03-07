@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 const HorizentalScroll = () => {
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
-
+  const [navBtn, setNavBtn] = useState([]);
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
@@ -26,14 +26,13 @@ const HorizentalScroll = () => {
           trigger: triggerRef.current,
           start: "top 100",
           end: "2000 top",
-          scrub: 0.6,
+          scrub: 0.3,
           pin: true,
         },
       }
     );
     return () => {
       {
-        /* A return function for killing the animation on component unmount */
       }
       pin.kill();
     };
@@ -45,7 +44,7 @@ const HorizentalScroll = () => {
         <div ref={triggerRef}>
           <div ref={sectionRef} className="scroll-section-inner">
             {tabsDetail.map((tab, indx) => (
-              <div className="scroll-section">
+              <div key={indx} className="scroll-section">
                 <TabContent
                   key={indx}
                   title={tab.title}

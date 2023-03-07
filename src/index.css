@@ -519,6 +519,7 @@ body.modal-open {
   display: flex;
   padding: 30px;
   justify-content: center;
+  background-color: #111111;
   align-items: start;
   flex-direction: row;
   position: relative;

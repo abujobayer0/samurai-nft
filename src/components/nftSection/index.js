@@ -16,21 +16,41 @@ import {
 import StepsSection from "../stepsSection";
 
 const NftSection = () => {
-  const sectionRef = useRef(null);
-  console.log(sectionRef.current);
+  const [navPosition, setNavPosition] = useState(null);
+  const componentRef = useRef(null);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setNavPosition(false);
+        } else {
+          setNavPosition(true);
+        }
+      },
+      { rootMargin: "-1px 0px 0px 0px" } // adjust as needed
+    );
+    if (componentRef.current) {
+      observer.observe(componentRef.current);
+    }
+    return () => {
+      if (componentRef.current) {
+        observer.unobserve(componentRef.current);
+      }
+    };
+  }, [navPosition]);
+  console.log(navPosition);
   return (
     <>
       <section className="max-w-7xl  mb-20 mt-32 tab-navigation mx-auto px-5 sm:px-10">
         <h1 className="clash-700 mb-5 md:mb-[30px] lg:mb-[70px] leading-[78px] text-[30px] sm:text-[40px]  md:text-[45px] lg:text-[60px]">
           The <span className="bg-[#EC1C24] pr-8 lg:pr-12">Clans</span>
         </h1>
-        <div>
-          <TabNav />
-        </div>
+        <div>{/* <TabNav /> */}</div>
         <div className="flex flex-col  gap-32">
           <div className="relative">
-            <HorizentalScroll useRef={sectionRef} />
+            <HorizentalScroll />
+
             <ClanTabs
               tabOne={
                 <TabContent

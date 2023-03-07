@@ -4,7 +4,7 @@ const TabContent = ({ title, paragraph, icon, btn, img, condition }) => {
   return (
     <>
       {/* <div className="  "> */}
-      <section className="grid z-50 gap-16  grid-cols-1 tab-content max-h-[724px] max-w-full relative lg:pt-44 md:mt-20 mx-0 lg:mx-20  mt-16 lg:mt-1 md:grid-cols-2">
+      <section className="grid bg-[#111111] z-50 gap-16  grid-cols-1 tab-content max-h-[724px] max-w-full relative lg:pt-44 md:mt-20 mx-0 lg:mx-20  mt-16 lg:mt-1 md:grid-cols-2">
         <div className="order-2 md:order-none">
           <h1 className="clash-700 mb-0  leading-[78px] text-[30px] sm:text-[40px]  md:text-[45px] lg:text-[60px]">
             {title}

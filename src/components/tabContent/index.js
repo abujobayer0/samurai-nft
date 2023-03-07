@@ -16,7 +16,7 @@ const TabContent = ({ title, paragraph, icon, btn, img, condition }) => {
               condition === "isWater" ? "water-effect" : ""
             } ${
               condition === "isSky" ? "sky-effect" : ""
-            } mb-5 max-w-4xl lg:max-w-2xl text-sm`}
+            } mb-5 lg:max-w-[600px] text-sm`}
           >
             {paragraph}
           </p>

@@ -8,7 +8,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 body {
   margin: 0;
   font-family: "Grand9K Pixel", sans-serif;
@@ -531,6 +530,24 @@ body.modal-open {
 }
 .red-text-gra {
   background: linear-gradient(92.86deg, #ff41d5 -3.58%, #ff1c1c 102.6%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ron-text-gra {
+  background: linear-gradient(87.41deg, #d40000 -3.64%, #ff9797 102.75%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.green-text-gra {
+  background: linear-gradient(88.19deg, #1dc73d -1.44%, #e6ae20 101.91%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.white-text-gra {
+  background: linear-gradient(88.91deg, #ffe6e6 -1.41%, #fb9393 104.29%);
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

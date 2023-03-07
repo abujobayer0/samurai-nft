@@ -39,14 +39,6 @@ const HorizentalScroll = () => {
     };
   }, []);
 
-  const [scrollPos, setScrollPos] = useState(0);
-
-  const handleScroll = (e) => {
-    const scrollSpeed = 2; // Increase or decrease this value to change the scroll speed
-    const delta = e.deltaY * scrollSpeed;
-    const newScrollPos = scrollPos + delta;
-    setScrollPos(newScrollPos);
-  };
   return (
     <>
       <section className="scroll-section-outer hidden lg:block max-w-7xl  ">

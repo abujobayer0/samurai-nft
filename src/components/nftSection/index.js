@@ -116,7 +116,7 @@ const NftSection = () => {
               }
             />
           </div>
-          <div className="">
+          <div className="mt-10 ">
             <StepsSection />
           </div>
         </div>

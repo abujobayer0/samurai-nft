@@ -3,6 +3,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { tabsDetail } from "../../constants";
 import { TabContent, TabNav } from "../";
+import StepsSection from "../stepsSection";
 
 gsap.registerPlugin(ScrollTrigger);
 const HorizentalScroll = () => {
@@ -18,7 +19,7 @@ const HorizentalScroll = () => {
         translateX: 0,
       },
       {
-        translateX: "-400vw",
+        translateX: "-500vw",
         ease: "none",
         duration: 1,
         scrollTrigger: {

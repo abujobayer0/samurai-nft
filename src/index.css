@@ -509,8 +509,9 @@ body.modal-open {
   height: 60vh;
   width: 500vw;
   display: flex;
+  padding: 30px;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-direction: row;
   position: relative;
 }
@@ -522,4 +523,9 @@ body.modal-open {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.gra-Leg-Btn {
+  background: linear-gradient(85.91deg, #ff3030 -4.96%, #e6dd0f 95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

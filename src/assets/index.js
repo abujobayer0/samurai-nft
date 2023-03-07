@@ -15,10 +15,12 @@ import LeafIcon from "./leafIconBtn.png";
 import PsyhicIcon from "./psyhicIconBtn.png";
 import WaterIcon from "./waterIconBtn.png";
 import SkyIcon from "./skyIconBtn.png";
+import StepsLine from "./stepsLine.png";
 export {
   Logo,
   dextools,
   FireIcon,
+  StepsLine,
   LeafIcon,
   PsyhicIcon,
   WaterIcon,

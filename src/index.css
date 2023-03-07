@@ -529,3 +529,9 @@ body.modal-open {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.red-text-gra {
+  background: linear-gradient(92.86deg, #ff41d5 -3.58%, #ff1c1c 102.6%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -44,15 +44,7 @@ const Tokenomics = () => {
   useEffect(() => {
     const chartDom = document.getElementById("main");
     const myChart = echarts.init(chartDom);
-    const mediaQuery = {
-      query: "(max-width: 768px)",
-      option: {
-        tooltip: {
-          position: ["0%", "10%"],
-        },
-        // ... other options
-      },
-    };
+
     const option = {
       grid: {
         left: "3%",
@@ -72,6 +64,11 @@ const Tokenomics = () => {
       ],
       tooltip: {
         trigger: "item",
+        formatter: function (params) {
+          // Use a function to customize the tooltip
+          const colorDot = `<span style="display:inline-block;margin-right:5px;border-radius:10px;width:10px;height:10px;background-color:${params.color};"></span>`;
+          return `${colorDot} ${params.name}: ${params.value} (${params.percent}%)`; // Format the tooltip to show a color dot, the value, percentage, and name
+        },
       },
       series: [
         {

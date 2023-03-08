@@ -7,7 +7,7 @@ const CoinTab = ({ img, para }) => {
       md:grid-cols-2 "
     >
       <div className=" md:order-2 flex  justify-end items-end  p-8">
-        <img loading="lazy" src={img} className="w-full mx-auto" alt="coin" />
+        <img loading="lazy" src={img} className="w-full " alt="coin" />
       </div>
       <div className="w-full flex justify-center items-center ">
         <p className="text-[16px] fire-effect">{para}</p>

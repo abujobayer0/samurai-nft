@@ -31,7 +31,7 @@ body {
 }
 /* Primary  Button Customized */
 
-.pixel2,
+/* .pixel2,
 .blueBtn,
 .childBlueBtn,
 .HagonBtn,
@@ -67,28 +67,7 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-.childBtn:active,
-.childBlueBtn:active,
-.childGreenBtn:active,
-.blueBtn:active,
-.HagonBtn:active,
-.MizuBtn:active,
-.KazeBtn:active,
-.TsuchiBtn:active,
-.DenkiBtn:active,
-.HagonBtnNft:active,
-.MizuBtnNft:active,
-.KazeBtnNft:active,
-.TsuchiBtnNft:active,
-.DenkiNft:active,
-.greenBtn:active,
-.SecondaryPixelBtn:active,
-.childBtnSecondary:active,
-.pixel2:active {
-  top: 2px;
-}
+} */
 
 .pixel2,
 .blueBtn,
@@ -110,7 +89,6 @@ body {
 .childBtn {
   position: relative;
   display: block;
-  margin: 5px;
   font-family: "VT323";
   font-size: 25px;
   text-transform: uppercase;
@@ -182,7 +160,7 @@ body {
   }
 }
 
-.pixel2::before,
+/* .pixel2::before,
 .blueBtn::before,
 .greenBtn::before,
 .childGreenBtn::before,
@@ -235,7 +213,7 @@ body {
   left: -6px;
   right: -6px;
   z-index: -1;
-}
+} */
 
 .pixel2,
 .childBlueBtn,
@@ -256,7 +234,6 @@ body {
 .SecondaryPixelBtn,
 .childBtn {
   position: relative;
-
   width: auto;
   z-index: 2;
 }
@@ -308,14 +285,9 @@ body {
   background-color: #fff;
 }
 .childBtn {
-  background-color: #d40000;
+  /* background-color: #d40000; */
 }
-.childBtn::after {
-  background-color: #d40000;
-}
-.childBtn::before {
-  background-color: #d40000;
-}
+
 .childBlueBtn {
   background-color: #2461ff;
 }

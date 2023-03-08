@@ -1,4 +1,4 @@
-import { Button } from "../index";
+import { Button, DemoBtn } from "../index";
 import googlePlayStoreLogo from "../../assets/googlePlayStoreLogo.webp";
 const HeroSection = () => {
   return (
@@ -23,7 +23,12 @@ const HeroSection = () => {
         </p>
         <div className="w-full flex flex-col mx-auto justify-center items-center">
           <div className="w-full flex mx-auto justify-center min-w-3xl items-center gap-6 mt-10">
-            <Button title={"Play now"} />
+            <DemoBtn
+              title={"play now"}
+              bgColor={"#D40000"}
+              dotColor={"#FF7F7F"}
+              color={"#AAAAAA"}
+            />
             <Button title={"learn more"} isSecondary />
           </div>
           <div className="flex mx-auto justify-center items-center w-full gap-2 mt-10">

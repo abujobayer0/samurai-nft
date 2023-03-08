@@ -28,7 +28,9 @@ const Button = ({ isSecondary, title, isBlue, isGreen, icon }) => {
           <span className={`  px-[32px] py-[10px] childBlueBtn`}>{title}</span>
         </button>
       ) : isGreen ? (
-        <button className="greenBtn relative">
+        <button className=" relative">
+          <span className="w-[90px] h-[7px] bg-white absolute left-[2px] -top-[7px] z-50"></span>
+          <span className="w-[7px] h-[52px] bg-white absolute -left-[7px] top-[2px] z-50"></span>
           <span className="w-[7px] h-[7px] z-50 absolute top-[20px] left-[16px] bg-[#58E955]"></span>
           <span className="w-[7px] h-[7px] z-50 absolute top-[13px] left-[23px] bg-[#58E955]"></span>
           <span className="w-[7px] h-[7px] z-50 absolute top-[13px] left-[30px] bg-[#58E955]"></span>
@@ -43,6 +45,11 @@ const Button = ({ isSecondary, title, isBlue, isGreen, icon }) => {
           <span className="w-[7px] h-[7px] z-50 absolute bottom-[26px] right-[10px] bg-[#58E955]"></span>
           <span className="w-[7px] h-[7px] z-50 absolute bottom-[33px] right-[18px] bg-[#58E955]"></span>
           <span className={`  px-[32px] py-[10px] childGreenBtn`}>{title}</span>
+          <span className="w-[10px] h-[10px] z-50 absolute -bottom-[4px] -left-[4px] bg-white"></span>
+          <span className="w-[10px] h-[10px] z-50 absolute -top-[4px] -left-[4px] bg-white"></span>
+          <span className="w-[10px] h-[10px] z-50 absolute -top-[4px] -right-[4px] bg-white"></span>
+          <span className="w-[10px] h-[10px] z-50 absolute -bottom-[4px] -right-[4px] bg-white"></span>
+          <span className="w-[7px] h-[52px] bg-white absolute -right-[7px] top-[2px] z-50"></span>
         </button>
       ) : title === "fire" ? (
         <button className="HagonBtn ">
@@ -90,7 +97,9 @@ const Button = ({ isSecondary, title, isBlue, isGreen, icon }) => {
           </span>
         </button>
       ) : (
-        <button className="pixel2 relative">
+        <button className="pixel2   relative">
+          <span className="w-[139px] h-[7px] bg-gray-400 absolute left-[2px] -top-[7px] z-50"></span>
+          <span className="w-[7px] h-[54px] bg-gray-400 absolute -left-[7px] top-[2px] z-50"></span>
           <span className="w-[7px] h-[7px] z-50 absolute top-[20px] left-[16px] bg-[#FF7F7F]"></span>
           <span className="w-[7px] h-[7px] z-50 absolute top-[13px] left-[23px] bg-[#FF7F7F]"></span>
           <span className="w-[7px] h-[7px] z-50 absolute top-[13px] left-[30px] bg-[#FF7F7F]"></span>
@@ -106,6 +115,12 @@ const Button = ({ isSecondary, title, isBlue, isGreen, icon }) => {
           <span className="w-[7px] h-[7px] z-50 absolute bottom-[33px] right-[18px] bg-[#FF7F7F]"></span>
           <span className="w-[7px] h-[7px] z-50 absolute bottom-[40px] right-[26px] bg-[#FF7F7F]"></span>
           <span className={`  px-[32px] py-[10px]  childBtn`}>{title}</span>
+          <span className="w-[10px] h-[10px] z-50 absolute -bottom-[4px] -left-[4px] bg-gray-400"></span>
+          <span className="w-[10px] h-[10px] z-50 absolute -top-[4px] -left-[4px] bg-gray-400"></span>
+          <span className="w-[10px] h-[10px] z-50 absolute -top-[4px] -right-[4px] bg-gray-400"></span>
+          <span className="w-[10px] h-[10px] z-50 absolute -bottom-[4px] -right-[4px] bg-gray-400"></span>
+          <span className="w-[7px] h-[54px] bg-gray-400 absolute -right-[7px] top-[2px] z-50"></span>
+          <span className="w-[139px] h-[7px] bg-gray-400 absolute left-[2px]  z-50"></span>
         </button>
       )}
     </div>

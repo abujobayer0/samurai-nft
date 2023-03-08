@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../";
+import { Button, DemoBtn } from "../";
 const CommonSection = ({
   img,
   title,
@@ -42,10 +42,20 @@ const CommonSection = ({
           </div>
           <p className="text-[16px]  text-[#BCBCBC] mt-4">{paragraph}</p>
           {isThreeButton && (
-            <div className="flex px-2  flex-wrap gap-4 space-x-1 lg:gap-10 mt-10 justify-start items-center">
-              <Button isSecondary title={btnOneTitle} />
-              <Button title={btnTwoTitle} isBlue />
-              <Button title={btnThreeTitle} isGreen />
+            <div className="flex px-2 py-2 h-[100px]  flex-wrap gap-4 h space-x-1 lg:gap-10 mt-10 justify-start items-center">
+              <DemoBtn
+                title={"Audit"}
+                bgColor={"#2461FF"}
+                dotColor={"#5182FF"}
+                color={"#FFFFFF"}
+              />
+              <DemoBtn
+                title={"kyc"}
+                bgColor={"#1CB219"}
+                dotColor={"#58E955"}
+                color={"#FFFFFF"}
+                green
+              />
             </div>
           )}
         </div>

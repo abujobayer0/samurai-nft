@@ -13,8 +13,10 @@ import CoinTab from "./coinTab";
 import Faq from "./FAQ";
 import Footer from "./footer";
 import SocialSectionFooter from "./socialSectionFooter";
+import Tokenomics from "./tokenomics";
 export {
   CoinTab,
+  Tokenomics,
   Footer,
   SocialSectionFooter,
   Faq,

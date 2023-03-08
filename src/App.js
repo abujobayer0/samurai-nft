@@ -6,6 +6,7 @@ import {
   HeroSection,
   NavBar,
   NftSection,
+  Tokenomics,
 } from "./components";
 import CurrencySection from "./components/currencySection";
 
@@ -17,6 +18,7 @@ const App = () => {
       <FeaturedSection />
       <NftSection />
       <CurrencySection />
+      <Tokenomics />
       <Faq />
       <Footer />
     </>

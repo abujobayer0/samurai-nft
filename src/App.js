@@ -21,8 +21,8 @@ const App = () => {
       <CurrencySection />
       <Tokenomics />
       <Faq />
-      <Footer />
       <DemoBtn />
+      <Footer />
     </>
   );
 };

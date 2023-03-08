@@ -27,7 +27,7 @@ const CurrencySection = () => {
             </li>
           </button>
         </ul>
-        <div className="w-full  mx-auto flex justify-center items-center">
+        <div className="w-full   mx-auto flex justify-center items-center">
           {tab === 0 && (
             <CoinTab
               img={RioCoin}

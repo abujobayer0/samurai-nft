@@ -29,7 +29,7 @@ const Tokenomics = () => {
     if (screenWidth <= 768) {
       setRadius([25, 150]);
     }
-    if (screenWidth <= 500) {
+    if (screenWidth <= 600) {
       setRadius([15, 75]);
     } else {
       setRadius([40, 200]);

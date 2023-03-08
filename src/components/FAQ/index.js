@@ -5,7 +5,7 @@ const AccordionItem = ({ header, no, ...rest }) => (
   <Item
     {...rest}
     header={
-      <li className="md:text-[26px] text-[22px] lg:text-[32px]">
+      <li className="md:text-[26px] text-sm lg:text-[32px]">
         <span className="pr-6">{no}</span>
         {header}
       </li>

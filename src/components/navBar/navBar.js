@@ -17,7 +17,7 @@ const NavBar = () => {
   }, [toggle]);
 
   return (
-    <div className="md:grid mx-auto px-5 sm:px-10  flex max-w-7xl justify-between md:grid-cols-3 pt-2 md:place-items-center md:place-content-center ">
+    <div className="md:grid pt-4 mx-auto px-5 sm:px-10  flex max-w-7xl justify-between md:grid-cols-3  md:place-items-center md:place-content-center ">
       <div className=" hidden lg:flex items-center  w-full  gap-[21px] ">
         {navLinks.map((nav, indx) => (
           <span key={indx} className="text-sm uppercase ">

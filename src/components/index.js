@@ -14,8 +14,10 @@ import Faq from "./FAQ";
 import Footer from "./footer";
 import SocialSectionFooter from "./socialSectionFooter";
 import Tokenomics from "./tokenomics";
+import DemoBtn from "./Demo";
 export {
   CoinTab,
+  DemoBtn,
   Tokenomics,
   Footer,
   SocialSectionFooter,

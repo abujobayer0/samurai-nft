@@ -4,8 +4,8 @@ const TabContent = ({ title, paragraph, icon, btn, img, condition }) => {
   return (
     <>
       {/* <div className="  "> */}
-      <section className="grid bg-[#111111] z-50 gap-16  grid-cols-1 tab-content max-h-[724px] max-w-full relative lg:pt-44 md:mt-20 mx-0 lg:mx-20  mt-16 lg:mt-1 md:grid-cols-2">
-        <div className="order-2 md:order-none">
+      <section className="grid lg:flex bg-transparent z-50 gap-28  grid-cols-1 tab-content max-h-[100vh]  relative lg:pt-44 max-w-[100vw] md:mt-20 mx-0 lg:mx-20  mt-16 lg:mt-1 ">
+        <div className="order-2  lg:order-none">
           <h1 className="clash-700 mb-0  leading-[78px] text-[30px] sm:text-[40px]  md:text-[45px] lg:text-[60px]">
             {title}
           </h1>
@@ -16,7 +16,7 @@ const TabContent = ({ title, paragraph, icon, btn, img, condition }) => {
               condition === "isWater" ? "water-effect" : ""
             } ${
               condition === "isSky" ? "sky-effect" : ""
-            } mb-5 lg:max-w-[600px] w-full text-sm`}
+            } mb-5 lg:w-[700px] relative text-[16px]`}
           >
             {paragraph}
           </p>
@@ -50,7 +50,7 @@ const TabContent = ({ title, paragraph, icon, btn, img, condition }) => {
           ) : (
             <img
               loading="lazy"
-              className="max-w-full  z-30 mx-auto"
+              className=" md:min-w-[350px]  xl:min-w-[400px]  z-30 mx-auto"
               src={img}
               alt=""
             />

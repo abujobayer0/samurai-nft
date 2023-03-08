@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  DemoBtn,
   Faq,
   FeaturedSection,
   Footer,
@@ -21,6 +22,7 @@ const App = () => {
       <Tokenomics />
       <Faq />
       <Footer />
+      <DemoBtn />
     </>
   );
 };

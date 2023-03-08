@@ -17,31 +17,31 @@ const DemoBtn = ({ title, color, bgColor, green, dotColor }) => {
           style={{ background: dotColor }}
         ></span>
         <span
-          className="w-[7px] h-[7px] z-50 absolute top-[10px]  md:top-[13px] left-[23px] "
+          className="w-[7px] h-[7px] z-50 absolute top-[10px]  md:top-[10px] left-[23px] "
           style={{ background: dotColor }}
         ></span>
         <span
-          className="w-[7px] h-[7px] z-50 absolute top-[10px]  md:top-[13px] left-[30px] "
+          className="w-[7px] h-[7px] z-50 absolute top-[10px]  md:top-[10px] left-[30px] "
           style={{ background: dotColor }}
         ></span>
         <span
-          className="w-[7px] h-[7px] z-50 absolute top-[10px]  md:top-[13px] left-[37px] "
+          className="w-[7px] h-[7px] z-50 absolute top-[10px]  md:top-[10px] left-[37px] "
           style={{ background: dotColor }}
         ></span>
         <span
-          className="w-[7px] h-[7px] z-50 absolute top-[10px]  md:top-[13px] left-[44px] "
+          className="w-[7px] h-[7px] z-50 absolute top-[10px]  md:top-[10px] left-[44px] "
           style={{ background: dotColor }}
         ></span>
         <span
-          className="w-[7px] h-[7px] z-50 absolute top-[10px]  md:top-[13px] left-[51px] "
+          className="w-[7px] h-[7px] z-50 absolute top-[10px]  md:top-[10px] left-[51px] "
           style={{ background: dotColor }}
         ></span>
         <span
-          className="w-[7px] h-[7px] z-50 absolute top-[10px]  md:top-[13px] left-[58px] "
+          className="w-[7px] h-[7px] z-50 absolute top-[10px]  md:top-[10px] left-[58px] "
           style={{ background: dotColor }}
         ></span>
         <span
-          className="w-[7px] h-[7px] z-50 absolute top-[10px]  md:top-[13px] left-[65px] "
+          className="w-[7px] h-[7px] z-50 absolute top-[10px]  md:top-[10px] left-[65px] "
           style={{ background: dotColor }}
         ></span>
         <span

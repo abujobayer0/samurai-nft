@@ -19,7 +19,7 @@ const Tokenomics = () => {
     { value: 26, name: "CEX LISTING", color: "#F6C165" },
     {
       value: 40,
-      name: "FURTHER DEVELOPMENT AND ECOSYSTEM MAINTENCE",
+      name: "FURTHER DEVELOPMENT ",
       color: "#D17D00",
     },
     { value: 30, name: "MARKETING AND PARTNERHIP", color: "#D17D00" },
@@ -28,17 +28,31 @@ const Tokenomics = () => {
     const screenWidth = window.innerWidth;
     if (screenWidth <= 768) {
       setRadius([25, 150]);
+    }
+    if (screenWidth <= 400) {
+      setRadius([15, 75]);
     } else {
       setRadius([40, 200]);
     }
   };
+  const updates = () => {
+    updateRadius();
+  };
   useLayoutEffect(() => {
-    window.addEventListener("resize", updateRadius);
+    window.addEventListener("resize", updates);
   }, []);
   useEffect(() => {
     const chartDom = document.getElementById("main");
     const myChart = echarts.init(chartDom);
-
+    const mediaQuery = {
+      query: "(max-width: 768px)",
+      option: {
+        tooltip: {
+          position: ["0%", "10%"],
+        },
+        // ... other options
+      },
+    };
     const option = {
       grid: {
         left: "3%",
@@ -67,7 +81,7 @@ const Tokenomics = () => {
 
           center: ["50%", "50%"],
           roseType: "area",
-          xAxisIndex: 1,
+          xAxisIndex: 0,
           yAxisIndex: 0,
           barWidth: 4,
           itemStyle: {

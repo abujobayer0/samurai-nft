@@ -14,13 +14,13 @@ const Footer = () => {
             Best News <br /> Every Week
           </p>
 
-          <div className="w-full bg-[#111111] px-2 border-white h-16 md:h-20 rounded-full flex  items-center border-2">
+          <div className="w-full bg-[#111111] px-2 border-white h-16 md:h-20 rounded-full flex  items-center relative  border-2">
             <input
               type="text"
-              className="bg-transparent text-sm pl-4 outline-none h-14 md:h-16 rounded-full flex-1"
+              className="bg-transparent text-sm outline-none h-14 md:h-16 rounded-full flex-1"
               placeholder="Type Your Email Here..."
             />
-            <button className=" w-36 md:w-44 h-12 md:h-16 rounded-full text-sm bg-[#ec1c24]">
+            <button className="  w-36 md:w-44 h-12 md:h-16 rounded-full px-2 text-sm bg-[#ec1c24]">
               Subscribe
             </button>
           </div>

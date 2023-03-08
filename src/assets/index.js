@@ -22,10 +22,14 @@ import TwitterIcon from "./twitterIcon.png";
 import TelegramIcon from "./TelegramIco.png";
 import GitBookIcon from "./gitbookIcon.png";
 import FooterGradinet from "./gradientFooter.png";
+import TempleIcon from "./TempleIcon.png";
+import RodaMap from "./roadMap.png";
 export {
   Logo,
   RioCoin,
   FooterGradinet,
+  TempleIcon,
+  RodaMap,
   TelegramIcon,
   GitBookIcon,
   TwitterIcon,

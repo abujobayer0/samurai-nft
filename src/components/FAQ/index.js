@@ -25,7 +25,7 @@ export default function Faq() {
     <div className={"max-w-7xl px-5 lg:px-10 mx-auto mb-32"}>
       <Title head={"Frequently Aske"} sub={"d Question"} />
       <Accordion transition transitionTimeout={200}>
-        <AccordionItem no={"001"} header="What is 0xSamurai?" initialEntered>
+        <AccordionItem no={"001"} header="What is 0xSamurai?">
           0xSamurai is a blockchain-based game that allows players to collect
           and battle with NFTs in a virtual arena. Players can earn rare NFTs
           and other rewards by winning battles and completing quests.

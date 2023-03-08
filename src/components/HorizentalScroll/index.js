@@ -19,7 +19,7 @@ const HorizentalScroll = () => {
         translateX: "0vw",
       },
       {
-        translateX: "-403vw",
+        translateX: "-303vw",
         ease: "none",
         duration: 1,
         scrollTrigger: {
@@ -31,6 +31,7 @@ const HorizentalScroll = () => {
         },
       }
     );
+
     const Large = window.matchMedia(
       "(min-width: 992px) and (max-width: 1024px)"
     );
@@ -41,13 +42,13 @@ const HorizentalScroll = () => {
     const mqXLarge = window.matchMedia("(min-width: 1280px)");
 
     if (Md) {
-      pin.vars.translateX = "-470vw";
-    } else if (Large) {
-      pin.vars.translateX = "-435vw";
-    } else if (mqLarge.matches) {
       pin.vars.translateX = "-400vw";
+    } else if (Large) {
+      pin.vars.translateX = "-305vw";
+    } else if (mqLarge.matches) {
+      pin.vars.translateX = "-300vw";
     } else if (mqXLarge.matches) {
-      pin.vars.translateX = "-410vw";
+      pin.vars.translateX = "-310vw";
     }
     return () => {
       {
@@ -58,11 +59,11 @@ const HorizentalScroll = () => {
 
   return (
     <>
-      <section className="scroll-section-outer hidden lg:block max-w-7xl  ">
+      <section className="scroll-section-outer hidden lg:block overflow-hidden max-w-[1400px]  ">
         <div ref={triggerRef}>
           <div
             ref={sectionRef}
-            className="scroll-section-inner flex justify-center items-center min-h-[100vh]"
+            className="scroll-section-inner flex justify-center items-center min-h-[80vh]"
           >
             {tabsDetail.map((tab, indx) => (
               <div

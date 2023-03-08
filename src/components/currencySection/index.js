@@ -5,14 +5,14 @@ const CurrencySection = () => {
   const [tab, setTab] = useState(0);
   return (
     <div>
-      <div className="max-w-7xl    px-5 lg:px-10  mb-20 transition duration-150 ease-in-out flex flex-col justify-start items-start mx-auto  bg-transparent">
+      <div className="max-w-[1400px]    px-5 lg:px-10  mb-20 transition duration-150 ease-in-out flex flex-col justify-start items-start mx-auto  bg-transparent">
         <Title head={"The"} sub={"Currency"} />
         <ul className="lg:w-[510px] mb-10  md:w-[500px] w-[300px] px-4 clash-700 flex transition duration-150 ease-linear items-center justify-around rounded-full bg-[#212121]">
           <button onClick={() => setTab(0)}>
             <li
               className={` w-[137px] md:w-[187px] ${
                 tab === 0 ? "bg-red-500" : ""
-              }   flex tab-item justify-center items-center  md:h-[60px] sm:h-[40px] h-[40px] lg:h-[91px] rounded-full m-2 md:text-[36px] sm:text-lg cursor-pointer text-sm lg:text-3xl uppercase `}
+              }   flex tab-item justify-center items-center  md:h-[60px] sm:h-[40px] h-[40px] lg:h-[70px] rounded-full m-2 md:text-[36px] sm:text-lg cursor-pointer text-sm lg:text-3xl uppercase `}
             >
               RYO
             </li>
@@ -21,7 +21,7 @@ const CurrencySection = () => {
             <li
               className={`w-[130px] md:w-[187px] ${
                 tab === 1 ? "bg-red-500" : ""
-              }  flex tab-item justify-center items-center px-1 sm:px-4 md:px-6 lg:px-12 md:h-[60px] sm:h-[40px] h-[40px] lg:h-[91px] rounded-full m-2 md:text-[36px] sm:text-lg cursor-pointer text-sm lg:text-3xl uppercase `}
+              }  flex tab-item justify-center items-center px-1 sm:px-4 md:px-6 lg:px-12 md:h-[60px] sm:h-[40px] h-[40px] lg:h-[70px] rounded-full m-2 md:text-[36px] sm:text-lg cursor-pointer text-sm lg:text-3xl uppercase `}
             >
               gold
             </li>

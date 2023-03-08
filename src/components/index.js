@@ -15,9 +15,13 @@ import Footer from "./footer";
 import SocialSectionFooter from "./socialSectionFooter";
 import Tokenomics from "./tokenomics";
 import DemoBtn from "./Demo";
+import RoadMap from "./RoadMap";
+import TemplePoint from "./TemplePoint";
 export {
   CoinTab,
   DemoBtn,
+  TemplePoint,
+  RoadMap,
   Tokenomics,
   Footer,
   SocialSectionFooter,

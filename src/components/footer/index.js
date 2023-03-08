@@ -4,7 +4,7 @@ import { SocialSectionFooter } from "../";
 const Footer = () => {
   return (
     <div>
-      <div className="max-w-7xl px-5 mx-auto relative lg:px-10">
+      <div className="max-w-[1400px] px-5 mx-auto relative lg:px-10">
         <div className=" flex gap-4 flex-col mx-auto  justify-center items-center max-w-3xl ">
           <h1 className=" text-[22px] md:text-[30px] lg:text-[36px] mx-auto clash-600">
             Subscribe To Get Hot New NFT News Updates

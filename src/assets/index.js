@@ -23,13 +23,13 @@ import TelegramIcon from "./TelegramIco.png";
 import GitBookIcon from "./gitbookIcon.png";
 import FooterGradinet from "./gradientFooter.png";
 import TempleIcon from "./TempleIcon.png";
-import RodaMap from "./roadMap.png";
+import roadMap from "./roadMap.png";
 export {
   Logo,
   RioCoin,
   FooterGradinet,
   TempleIcon,
-  RodaMap,
+  roadMap,
   TelegramIcon,
   GitBookIcon,
   TwitterIcon,

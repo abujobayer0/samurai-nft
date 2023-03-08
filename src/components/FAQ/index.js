@@ -22,7 +22,7 @@ const AccordionItem = ({ header, no, ...rest }) => (
 
 export default function Faq() {
   return (
-    <div className={"max-w-7xl px-5 lg:px-10 mx-auto mb-32"}>
+    <div className={"max-w-[1400px] px-5 lg:px-10 mx-auto mb-32"}>
       <Title head={"Frequently Aske"} sub={"d Question"} />
       <Accordion transition transitionTimeout={200}>
         <AccordionItem no={"001"} header="What is 0xSamurai?">

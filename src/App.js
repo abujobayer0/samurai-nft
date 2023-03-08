@@ -7,6 +7,7 @@ import {
   HeroSection,
   NavBar,
   NftSection,
+  RoadMap,
   Tokenomics,
 } from "./components";
 import CurrencySection from "./components/currencySection";
@@ -19,6 +20,7 @@ const App = () => {
       <FeaturedSection />
       <NftSection />
       <CurrencySection />
+      <RoadMap />
       <Tokenomics />
       <Faq />
       <DemoBtn />

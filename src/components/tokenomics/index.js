@@ -1,23 +1,34 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import * as echarts from "echarts";
+import { Title } from "../";
 const Tokenomics = () => {
+  const [radius, setRadius] = useState([50, 250]);
   const datas = [
-    { value: 40, name: "PRESALE", color: "#fff" },
-    { value: 40, name: "LIQUIDITY", color: "#fff" },
-    { value: 42, name: "GAME REWARD", color: "#fff" },
-    { value: 30, name: "AIRDROP", color: "#fff" },
-    { value: 26, name: "CEX LISTING", color: "#fff" },
+    { value: 40, name: "PRESALE", color: "#0FCBD7" },
+    { value: 40, name: "LIQUIDITY", color: "#3FBF1B" },
+    { value: 42, name: "GAME REWARD", color: "#DF9400" },
+    { value: 30, name: "AIRDROP", color: "#A5B00E" },
+    { value: 26, name: "CEX LISTING", color: "#F6C165" },
     {
       value: 40,
       name: "FURTHER DEVELOPMENT AND ECOSYSTEM MAINTENCE",
-      color: "#fff",
+      color: "#D17D00",
     },
-    { value: 30, name: "MARKETING AND PARTNERHIP", color: "#fff" },
+    { value: 30, name: "MARKETING AND PARTNERHIP", color: "#D17D00" },
   ];
   useEffect(() => {
     const chartDom = document.getElementById("main");
     const myChart = echarts.init(chartDom);
+    const updateRadius = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth <= 768) {
+        setRadius([25, 150]);
+      } else {
+        setRadius([50, 250]);
+      }
+    };
 
+    window.addEventListener("resize", updateRadius);
     const option = {
       grid: {
         left: "3%",
@@ -25,7 +36,6 @@ const Tokenomics = () => {
         bottom: "3%",
         containLabel: true,
       },
-      // Global palette:
       color: [
         "#0FCBD7",
         "#3FBF1B",
@@ -34,12 +44,8 @@ const Tokenomics = () => {
         "#F6C165",
         "#5B65E8",
         "#D17D00",
-        // "#6e7074",
-        // "#546570",
-        // "#D17D00",
-        // "#c4ccd3",
+        "#D17D00",
       ],
-
       tooltip: {
         trigger: "item",
         formatter: "{b}: {c} ({d}%)",
@@ -48,7 +54,8 @@ const Tokenomics = () => {
         {
           name: "Nightingale Chart",
           type: "pie",
-          radius: [50, 250],
+          radius: radius,
+
           center: ["50%", "50%"],
           roseType: "area",
           xAxisIndex: 1,
@@ -61,6 +68,7 @@ const Tokenomics = () => {
           itemStyle: {
             borderRadius: 10,
           },
+          itemGap: 20,
           data: datas,
         },
       ],
@@ -68,28 +76,25 @@ const Tokenomics = () => {
 
     myChart.setOption(option);
 
-    window.addEventListener("resize", () => {
-      myChart.resize();
-    });
     return () => {
-      window.removeEventListener("resize", () => {
-        myChart.resize();
-      });
       myChart.dispose();
     };
-  }, []);
+  }, [radius]);
 
   return (
     <div className="max-w-7xl mx-auto px-5 my-20 lg:px-10 ">
-      <div className="flex w-full justify-between items-center flex-col lg:flex-row">
-        <div className="w-full  md:h-[500px] flex items-center justify-center">
+      <Title head={"T"} sub={"okenomics"} />
+      <div className="flex w-full   justify-center py-12 items-center flex-col lg:flex-row">
+        <div className="w-full  h-[500px] flex items-center justify-center">
           <div id="main" style={{ width: "100%", height: "100%" }}></div>
         </div>
-        <div>
+        <div className="w-full">
           {datas.map((data) => (
-            <li className={`bg-${[data.color]}`}>
-              {" "}
-              {data.value} {data.name}
+            <li style={{ color: data.color }}>
+              <li style={{ color: "#fff", listStyle: "none", display: "flex" }}>
+                {" "}
+                {data.value} {data.name}
+              </li>
             </li>
           ))}
         </div>

@@ -19,7 +19,7 @@ const CommonSection = ({
         <div
           className={`max-w-[511px] ${
             orderRev && "order-2"
-          }  section section-1 flex justify-center  items-center overflow-hidden max-h-[734px]`}
+          }  section section-1 flex justify-center  items-center max-h-[734px]`}
         >
           {/* <div className=" md:w-[240] lg:w-[400px]  mx-auto relative rounded-full md:h-[380px] lg:h-[500px]"> */}
           <img className="w-full h-full " src={img} alt="img" />

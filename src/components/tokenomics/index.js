@@ -19,10 +19,10 @@ const Tokenomics = () => {
     { value: 26, name: "CEX LISTING", color: "#F6C165" },
     {
       value: 40,
-      name: "FURTHER DEVELOPMENT ",
+      name: "DEVELOPMENT ",
       color: "#D17D00",
     },
-    { value: 30, name: "MARKETING AND PARTNERHIP", color: "#D17D00" },
+    { value: 30, name: "MARKETING ", color: "#D17D00" },
   ];
   const updateRadius = () => {
     const screenWidth = window.innerWidth;

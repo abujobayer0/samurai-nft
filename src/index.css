@@ -556,3 +556,6 @@ body.modal-open {
 .border-custom {
   border-radius: 216px 183px 167px 189px / 145px 149px 150px 146px;
 }
+.temple-border {
+  border: 0.659401px solid #ffffff;
+}

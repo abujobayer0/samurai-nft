@@ -29,7 +29,7 @@ const HeroSection = () => {
               dotColor={"#FF7F7F"}
               color={"#AAAAAA"}
             />
-            <Button title={"learn more"} isSecondary />
+            <DemoBtn title={"learn more"} bgColor={"#111111"} color={"#ffff"} />
           </div>
           <div className="flex mx-auto justify-center items-center w-full gap-2 mt-10">
             <button className="flex  w-[180px] h-[52px] items-center border-2 px-4 md:pl-[17px] rounded-xl gap-2 py-[9px]">

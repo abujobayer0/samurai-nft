@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, CoinTab, Title } from "../";
+import { Button, CoinTab, DemoBtn, Title } from "../";
 import { GoldCoin, RioCoin } from "../../assets";
 const CurrencySection = () => {
   const [tab, setTab] = useState(0);
@@ -27,7 +27,7 @@ const CurrencySection = () => {
             </li>
           </button>
         </ul>
-        <div className="w-full   mx-auto flex justify-center items-center">
+        <div className="w-full mb-10 mx-auto flex justify-center items-center">
           {tab === 0 && (
             <CoinTab
               img={RioCoin}
@@ -45,7 +45,7 @@ const CurrencySection = () => {
             />
           )}
         </div>{" "}
-        <Button title={"learn more"} isSecondary />
+        <DemoBtn title={"learn more"} bgColor={"#11111"} color={"#fff"} />
       </div>
     </div>
   );

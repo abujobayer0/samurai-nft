@@ -42,7 +42,12 @@ const CommonSection = ({
           </div>
           <p className="text-[16px]  text-[#BCBCBC] mt-4">{paragraph}</p>
           {isThreeButton && (
-            <div className="flex px-2 py-2 h-[100px]  flex-wrap gap-4 h space-x-1 lg:gap-10 mt-10 justify-start items-center">
+            <div className="flex px-2 py-2 h-fit  flex-wrap gap-6 h  lg:gap-10 mt-10 justify-start items-center">
+              <DemoBtn
+                title={"Learn more"}
+                bgColor={"#111111"}
+                color={"#FFFFFF"}
+              />
               <DemoBtn
                 title={"Audit"}
                 bgColor={"#2461FF"}

@@ -1,10 +1,23 @@
 import React from "react";
 import { Button } from "../";
-const TabContent = ({ title, paragraph, icon, btn, img, condition }) => {
+const TabContent = ({
+  title,
+  nav,
+  paragraph,
+  icon,
+  id,
+  btn,
+  img,
+  condition,
+}) => {
   return (
     <>
       {/* <div className="  "> */}
-      <section className="grid lg:flex bg-transparent z-50 gap-28  grid-cols-1 tab-content max-h-[100vh]  relative lg:pt-44 max-w-[100vw] md:mt-20 mx-0 lg:mx-20  mt-16 lg:mt-1 ">
+
+      <section
+        id={`${nav}`}
+        className="grid lg:flex bg-transparent z-50 gap-28  grid-cols-1 tab-content max-h-[100vh]  relative lg:pt-44 max-w-[1200px] md:mt-20 mx-0 lg:mx-20  mt-16 lg:mt-1 "
+      >
         <div className="order-2  lg:order-none">
           <h1 className="clash-700 mb-0  leading-[78px] text-[30px] sm:text-[40px]  md:text-[45px] lg:text-[60px]">
             {title}
@@ -57,6 +70,7 @@ const TabContent = ({ title, paragraph, icon, btn, img, condition }) => {
           )}
         </div>
       </section>
+
       {/* </div> */}
     </>
   );

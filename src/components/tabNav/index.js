@@ -1,34 +1,28 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
-const TabNav = () => {
+const TabNav = ({ setNav, nav }) => {
+  const btns = [
+    { name: "Hagane", id: 1 },
+    { name: "Mizu", id: 2 },
+    { name: "Kaze", id: 3 },
+    { name: "Tsuchi", id: 3 },
+    { name: "Denki", id: 4 },
+  ];
+  const params = useParams();
+  console.log(params);
   return (
     <>
-      <ul className="w-full   px-4 clash-700 hidden lg:flex transition duration-150 ease-linear items-center justify-around rounded-full bg-[#212121]">
-        <li
-          className={`w-full  flex tab-item justify-center items-center px-1 sm:px-4 md:px-6 lg:px-12 md:h-[60px] sm:h-[40px] h-[30px] lg:h-[70px] rounded-full m-2 md:text-xl sm:text-lg cursor-pointer text-sm lg:text-3xl `}
-        >
-          Hagane
-        </li>
-        <li
-          className={`w-full  flex tab-itemx justify-center items-center px-1 sm:px-4 md:px-6 lg:px-12 md:h-[60px] sm:h-[40px] h-[30px] lg:h-[70px] rounded-full m-2 md:text-xl sm:text-lg cursor-pointer text-sm lg:text-3xl `}
-        >
-          Mizu
-        </li>
-        <li
-          className={`w-full  tab-item flex justify-center items-center px-1 sm:px-4 md:px-6 lg:px-12 md:h-[60px] sm:h-[40px] h-[30px] lg:h-[70px] rounded-full m-2 md:text-xl sm:text-lg cursor-pointer text-sm lg:text-3xl `}
-        >
-          Kaze
-        </li>
-        <li
-          className={`w-full  tab-item flex justify-center items-center px-1 sm:px-4 md:px-6 lg:px-12 md:h-[60px] sm:h-[40px] h-[30px] lg:h-[70px] rounded-full m-2 md:text-xl sm:text-lg cursor-pointer text-sm lg:text-3xl `}
-        >
-          Tsuchi
-        </li>
-        <li
-          className={`w-full  tab-item  flex justify-center items-center px-1 sm:px-4 md:px-6 lg:px-12 md:h-[60px] sm:h-[40px] h-[30px] lg:h-[70px] rounded-full m-2 md:text-xl sm:text-lg cursor-pointer text-sm lg:text-3xl `}
-        >
-          Denki
-        </li>
+      <ul className="max-w-[1200px] mx-auto py-2  px-4 clash-700 hidden lg:flex transition duration-150 ease-linear items-center justify-around rounded-full bg-[#212121]">
+        {btns.map((btn) => (
+          <li
+            className={`w-full m-0  flex tab-item justify-center items-center px-1 sm:px-4 md:px-6 lg:px-4 md:h-[60px] sm:h-[40px] h-[30px] lg:h-[70px] rounded-full md:text-xl sm:text-lg cursor-pointer text-sm lg:text-3xl `}
+          >
+            <a onClick={() => setNav(btn.id)} href={`#${btn.id}`}>
+              {btn.name}
+            </a>
+          </li>
+        ))}
       </ul>
     </>
   );

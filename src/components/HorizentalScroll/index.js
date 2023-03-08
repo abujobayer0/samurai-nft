@@ -1,15 +1,14 @@
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { tabsDetail } from "../../constants";
 import { TabContent, TabNav } from "../";
-import StepsSection from "../stepsSection";
 
 gsap.registerPlugin(ScrollTrigger);
 const HorizentalScroll = () => {
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
-  const [navBtn, setNavBtn] = useState([]);
+  const [nav, setNav] = useState(1);
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
@@ -59,8 +58,9 @@ const HorizentalScroll = () => {
 
   return (
     <>
-      <section className="scroll-section-outer hidden lg:block overflow-hidden max-w-[1400px]  ">
+      <section className="scroll-section-outer hidden xl:block overflow-hidden max-w-[1400px]  ">
         <div ref={triggerRef}>
+          <TabNav setNav={setNav} />
           <div
             ref={sectionRef}
             className="scroll-section-inner flex justify-center items-center min-h-[80vh]"
@@ -72,6 +72,8 @@ const HorizentalScroll = () => {
               >
                 <TabContent
                   key={indx}
+                  id={tab.id}
+                  nav={nav}
                   title={tab.title}
                   paragraph={tab.paragraph}
                   icon={tab.icon}

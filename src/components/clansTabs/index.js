@@ -17,7 +17,7 @@ const ClanTabs = ({ tabOne, tabTwo, tabThree, tabFour, tabFive }) => {
   };
 
   return (
-    <section className=" block lg:hidden">
+    <section className=" block xl:hidden">
       <ul className="w-full   px-4 clash-700 flex transition duration-150 ease-linear items-center justify-around rounded-full bg-[#212121]">
         <li
           className={`w-full  flex tab-item justify-center items-center px-1 sm:px-4 md:px-6 lg:px-12 md:h-[60px] sm:h-[40px] h-[30px] lg:h-[91px] rounded-full m-2 md:text-xl sm:text-lg cursor-pointer text-sm lg:text-3xl ${

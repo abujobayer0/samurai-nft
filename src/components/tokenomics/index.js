@@ -1,113 +1,158 @@
 import React, { useEffect, useLayoutEffect, useState } from "react";
-import * as echarts from "echarts";
+import { ResponsivePie } from "@nivo/pie";
+
 import { Title } from "../";
 const Tokenomics = () => {
-  const [radius, setRadius] = useState([40, 200]);
   const datas = [
     {
       value: 50,
-      name: "PRESALE",
+      label: "PRESALE",
       color: "#D17D00",
     },
     {
       value: 40,
-      name: "LIQUIDITY",
+      label: "LIQUIDITY",
       color: "#0FCBD7",
     },
-    { value: 70, name: "GAME REWARD", color: "#3FBF1B" },
-    { value: 36, name: "AIRDROP", color: "#5B65E8" },
-    { value: 36, name: "CEX LISTING", color: "#D17D00" },
+    { value: 70, label: "GAME REWARD", color: "#3FBF1B" },
+    { value: 36, label: "AIRDROP", color: "#5B65E8" },
+    { value: 36, label: "CEX LISTING", color: "#D17D00" },
     {
       value: 47,
-      name: "DEVELOPMENT ",
+      label: "DEVELOPMENT ",
       color: "#A5B00E",
     },
-    { value: 26, name: "MARKETING ", color: "#F6C165" },
+    { value: 26, label: "MARKETING ", color: "#F6C165" },
   ];
-  const updateRadius = () => {
-    const screenWidth = window.innerWidth;
-    if (screenWidth <= 768) {
-      setRadius([25, 150]);
-    }
-    if (screenWidth <= 600) {
-      setRadius([15, 75]);
-    } else {
-      setRadius([40, 200]);
-    }
-  };
-  const updates = () => {
-    updateRadius();
-  };
-  useLayoutEffect(() => {
-    window.addEventListener("resize", updates);
-  }, []);
-  useEffect(() => {
-    const chartDom = document.getElementById("main");
-    const myChart = echarts.init(chartDom);
-
-    const option = {
-      color: [
-        "#0FCBD7",
-        "#3FBF1B",
-        "#DF9400",
-        "#A5B00E",
-        "#F6C165",
-        "#5B65E8",
-        "#D17D00",
-        "#D17D00",
-      ],
-      tooltip: {
-        trigger: "item",
-        formatter: function (params) {
-          // Use a function to customize the tooltip
-          const colorDot = `<span style="display:inline-block;margin-right:5px;border-radius:10px;width:10px;height:10px;background-color:${params.color};"></span>`;
-          return `${colorDot} ${params.name}: ${params.value} (${params.percent}%)`; // Format the tooltip to show a color dot, the value, percentage, and name
-        },
-      },
-      series: [
-        {
-          name: "Access Form",
-          type: "pie",
-          radius: ["40%", "70%"],
-          roseType: "radius",
-          label: {
-            show: false,
-            position: "center",
-          },
-          emphasis: {
-            itemStyle: {
-              // customize appearance on hover
-
-              borderRadius: [10, 10, 10, 10],
-            },
-          },
-          itemStyle: {
-            borderRadius: [0, 0, 10, 10],
-            borderColor: "#111111",
-            borderWidth: 5,
-            width: 200,
-          },
-
-          data: datas,
-        },
-      ],
-    };
-
-    myChart.setOption(option);
-
-    return () => {
-      myChart.dispose();
-    };
-  }, [datas]);
-
   return (
-    <div className="max-w-7xl mx-auto px-5 my-20 lg:px-10 ">
-      <Title head={"T"} sub={"okenomics"} />
-      <div className="grid grid-cols-1 lg:grid-cols-2 place-content-end  place-items-end w-full lg:gap-44">
-        <div className="w-full  h-[500px] flex items-center justify-center">
-          <div id="main" style={{ width: "100%", height: "100%" }}></div>
-        </div>
-        <div className="w-full ">
+    // <div className="max-w-7xl mx-auto px-5 my-20 lg:px-10 ">
+    //   <Title head={"T"} sub={"okenomics"} />
+    //   <div className="grid grid-cols-1 lg:grid-cols-2 place-content-end  place-items-end w-full lg:gap-44">
+    //     <div className="w-full  flex items-center justify-center">
+    <ResponsivePie
+      data={datas}
+      margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
+      startAngle={-32}
+      innerRadius={0.4}
+      padAngle={3}
+      activeInnerRadiusOffset={13}
+      activeOuterRadiusOffset={25}
+      borderColor={{
+        from: "color",
+        modifiers: [["darker", "0"]],
+      }}
+      enableArcLinkLabels={false}
+      arcLinkLabelsSkipAngle={45}
+      arcLinkLabelsTextOffset={0}
+      arcLinkLabelsTextColor="#333333"
+      arcLinkLabelsOffset={-24}
+      arcLinkLabelsDiagonalLength={0}
+      arcLinkLabelsStraightLength={0}
+      arcLinkLabelsThickness={0}
+      arcLinkLabelsColor={{ from: "color" }}
+      arcLabelsRadiusOffset={0.55}
+      arcLabelsTextColor={{
+        from: "color",
+        modifiers: [["darker", "3"]],
+      }}
+      tooltip={function (e) {
+        var t = e.datum;
+        return (
+          <s style={{ color: t.color }}>
+            <d>id</d>
+            <c>{t.id}</c>
+            <d>value</d>
+            <c>{t.value}</c>
+            <d>formattedValue</d>
+            <c>{t.formattedValue}</c>
+            <d>color</d>
+            <c>{t.color}</c>
+          </s>
+        );
+      }}
+      defs={[
+        {
+          id: "dots",
+          type: "patternDots",
+          background: "inherit",
+          color: "rgba(255, 255, 255, 0.3)",
+          size: 4,
+          padding: 1,
+          stagger: true,
+        },
+        {
+          id: "lines",
+          type: "patternLines",
+          background: "inherit",
+          color: "rgba(255, 255, 255, 0.3)",
+          rotation: -45,
+          lineWidth: 6,
+          spacing: 10,
+        },
+      ]}
+      fill={[
+        {
+          match: { id: "ruby" },
+          id: "dots",
+        },
+        {
+          match: { id: "c" },
+          id: "dots",
+        },
+        {
+          match: { id: "go" },
+          id: "dots",
+        },
+        {
+          match: { id: "python" },
+          id: "dots",
+        },
+        {
+          match: { id: "scala" },
+          id: "lines",
+        },
+        {
+          match: { id: "lisp" },
+          id: "lines",
+        },
+        {
+          match: { id: "elixir" },
+          id: "lines",
+        },
+        {
+          match: { id: "javascript" },
+          id: "lines",
+        },
+      ]}
+      legends={[
+        {
+          anchor: "bottom",
+          direction: "column",
+          justify: false,
+          translateX: 200,
+          translateY: -115,
+          itemsSpacing: 0,
+          itemWidth: 10,
+          itemHeight: 25,
+          itemTextColor: "#999",
+          itemDirection: "left-to-right",
+          itemOpacity: 1,
+          symbolSize: 19,
+          symbolShape: "circle",
+          effects: [
+            {
+              on: "hover",
+              style: {
+                itemTextColor: "#000",
+              },
+            },
+          ],
+        },
+      ]}
+    />
+
+    /* </div>
+       <div className="w-full ">
           <div className="w-full flex flex-col   gap-4">
             {datas.map((data) => (
               <div
@@ -135,8 +180,9 @@ const Tokenomics = () => {
             ))}
           </div>
         </div>
-      </div>
-    </div>
+      </div> */
+
+    // </div>
   );
 };
 

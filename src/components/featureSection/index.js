@@ -5,12 +5,12 @@ import { CommonSection } from "../";
 const FeaturedSection = () => {
   return (
     <>
-      <section className="max-w-7xl mb-20 mt-32 mx-auto px-5 sm:px-10">
-        <h1 className="clash-700 mb-10 md:mb-[79px] text-[28px] lg:text-[38px]">
+      <section className="max-w-7xl mb-20 mt-[100px] mx-auto px-5 sm:px-10">
+        <h1 className="clash-700 mb-10 md:mb-[70px] text-[28px] lg:text-[38px]">
           Featured & Partners
         </h1>
         <div className="flex w-full overflow-hidden">
-          <div className="flex flex-container  gap-10 mb-10 lg:mb-20 md:gap-8  lg:gap-[61px]  flex-row items-center  relative justify-center  ">
+          <div className="flex flex-container  gap-10 mb-[100px] lg:mb-20 md:gap-8  lg:gap-[61px]  flex-row items-center  relative justify-center  ">
             {sponsers.map((img) => (
               <img
                 className="md:w-32  w-20 h-18 lg:w-44  "

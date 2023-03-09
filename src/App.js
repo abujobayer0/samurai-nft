@@ -11,6 +11,7 @@ import {
   Tokenomics,
 } from "./components";
 import CurrencySection from "./components/currencySection";
+import Test from "./test";
 
 const App = () => {
   return (

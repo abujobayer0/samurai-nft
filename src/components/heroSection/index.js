@@ -3,7 +3,7 @@ import googlePlayStoreLogo from "../../assets/googlePlayStoreLogo.webp";
 const HeroSection = () => {
   return (
     <>
-      <section className="mt-[62px] mx-auto max-w-7xl px-5 sm:px-10">
+      <section className="mt-[50px] mx-auto max-w-7xl px-5 sm:px-10">
         <h1 className="clash-700  md:leading-[78px] uppercase text-center text-[30px] sm:text-[40px]  md:text-[45px] lg:text-[64px]">
           This world needs a samurai <br />
           <div className="relative pt-4  w-full flex flex-col justify-center items-center mx-auto text-center ">
@@ -13,7 +13,7 @@ const HeroSection = () => {
             </h1>
           </div>
         </h1>
-        <p className="uppercase text-[12px] sm:text-[16px] text-[#BCBCBC]  mt-[16px] text-center leading-[30px]">
+        <p className="uppercase text-[12px] sm:text-[16px] text-[#BCBCBC]  mt-[25px] text-center leading-[30px]">
           Enter the world of 0xSamurai, where ordinary warriors are
           non-existent, and only legendary samurais who have mastered the art of
           combat exist. They don't just fight for glory but for the rarest and
@@ -21,8 +21,8 @@ const HeroSection = () => {
           that enable a samurai to rise and become the greatest warrior in the
           battle arena.
         </p>
-        <div className="w-full flex flex-col mx-auto justify-center items-center">
-          <div className="w-full flex mx-auto justify-center min-w-3xl items-center gap-6 mt-10">
+        <div className="w-full mt-[30px] flex flex-col mx-auto justify-center items-center">
+          <div className="w-full flex mx-auto justify-center min-w-3xl items-center gap-6 ">
             <DemoBtn
               title={"play now"}
               bgColor={"#D40000"}
@@ -31,7 +31,7 @@ const HeroSection = () => {
             />
             <DemoBtn title={"learn more"} bgColor={"#111111"} color={"#ffff"} />
           </div>
-          <div className="flex mx-auto justify-center items-center w-full gap-2 mt-10">
+          <div className="flex mx-auto justify-center items-center w-full gap-2 mt-[32px]">
             <button className="flex  w-[180px] h-[52px] items-center border-2 px-4 md:pl-[17px] rounded-xl gap-2 py-[9px]">
               <svg
                 width="24"

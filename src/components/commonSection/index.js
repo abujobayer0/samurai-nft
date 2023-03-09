@@ -17,7 +17,7 @@ const CommonSection = ({
       {" "}
       <section className="grid overflow-hidden grid-cols-1 gap-10  md:grid-cols-2">
         <div
-          className={`max-w-[511px] ${
+          className={`max-w-[50vh] ${
             orderRev && "order-2"
           }  section section-1 flex justify-center  items-center max-h-[734px]`}
         >
@@ -27,7 +27,7 @@ const CommonSection = ({
         </div>
         {/* rounded-full object-cover
         -rotate-45 */}
-        <div className="section section-2">
+        <div className="section   section-2">
           {subTitle && (
             <h3 className="clash-700 text-[28px] lg:text-[38px]">{subTitle}</h3>
           )}

@@ -11,7 +11,7 @@ const CurrencySection = () => {
           <button onClick={() => setTab(0)}>
             <li
               className={` w-[137px] md:w-[187px] ${
-                tab === 0 ? "bg-red-500" : ""
+                tab === 0 ? "bg-[#ec1c24]" : ""
               }   flex tab-item justify-center items-center  md:h-[60px] sm:h-[40px] h-[40px] lg:h-[70px] rounded-full m-2 md:text-[36px] sm:text-lg cursor-pointer text-sm lg:text-3xl uppercase `}
             >
               RYO
@@ -20,7 +20,7 @@ const CurrencySection = () => {
           <button onClick={() => setTab(1)}>
             <li
               className={`w-[130px] md:w-[187px] ${
-                tab === 1 ? "bg-red-500" : ""
+                tab === 1 ? "bg-[#ec1c24]" : ""
               }  flex tab-item justify-center items-center px-1 sm:px-4 md:px-6 lg:px-12 md:h-[60px] sm:h-[40px] h-[40px] lg:h-[70px] rounded-full m-2 md:text-[36px] sm:text-lg cursor-pointer text-sm lg:text-3xl uppercase `}
             >
               gold

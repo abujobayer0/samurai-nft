@@ -5,24 +5,24 @@ const Tokenomics = () => {
   const [radius, setRadius] = useState([40, 200]);
   const datas = [
     {
-      value: 40,
+      value: 16,
       name: "PRESALE",
-      color: "#0FCBD7",
-    },
-    {
-      value: 40,
-      name: "LIQUIDITY",
-      color: "#3FBF1B",
-    },
-    { value: 42, name: "GAME REWARD", color: "#DF9400" },
-    { value: 30, name: "AIRDROP", color: "#A5B00E" },
-    { value: 26, name: "CEX LISTING", color: "#F6C165" },
-    {
-      value: 40,
-      name: "DEVELOPMENT ",
       color: "#D17D00",
     },
-    { value: 30, name: "MARKETING ", color: "#D17D00" },
+    {
+      value: 16,
+      name: "LIQUIDITY",
+      color: "#0FCBD7",
+    },
+    { value: 36, name: "GAME REWARD", color: "#3FBF1B" },
+    { value: 5, name: "AIRDROP", color: "#5B65E8" },
+    { value: 7, name: "CEX LISTING", color: "#D17D00" },
+    {
+      value: 12,
+      name: "DEVELOPMENT ",
+      color: "#A5B00E",
+    },
+    { value: 6.4, name: "MARKETING ", color: "#F6C165" },
   ];
   const updateRadius = () => {
     const screenWidth = window.innerWidth;
@@ -46,12 +46,6 @@ const Tokenomics = () => {
     const myChart = echarts.init(chartDom);
 
     const option = {
-      grid: {
-        left: "3%",
-        right: "4%",
-        bottom: "3%",
-        containLabel: true,
-      },
       color: [
         "#0FCBD7",
         "#3FBF1B",
@@ -72,23 +66,26 @@ const Tokenomics = () => {
       },
       series: [
         {
-          name: "Nightingale Chart",
+          name: "Access From",
           type: "pie",
-          radius: radius,
-
-          center: ["50%", "50%"],
-          roseType: "area",
-          xAxisIndex: 0,
-          yAxisIndex: 0,
-          barWidth: 4,
-          itemStyle: {
-            color: "#333",
+          radius: ["40%", "70%"],
+          avoidLabelOverlap: true,
+          label: {
+            show: false,
+            position: "center",
           },
+          emphasis: {
+            itemStyle: {
+              // customize appearance on hover
 
+              borderRadius: [10, 10, 10, 10],
+            },
+          },
           itemStyle: {
-            borderRadius: 12,
+            borderRadius: [0, 0, 10, 10],
             borderColor: "#111111",
-            borderWidth: 10,
+            borderWidth: 5,
+            width: 200,
           },
 
           data: datas,

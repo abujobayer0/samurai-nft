@@ -22,7 +22,7 @@ const HeroSection = () => {
           battle arena.
         </p>
         <div className="w-full mt-[30px] flex flex-col mx-auto justify-center items-center">
-          <div className="w-full flex mx-auto justify-center min-w-3xl items-center gap-6 ">
+          <div className="w-full flex mx-auto justify-center min-w-3xl items-center gap-[30px] ">
             <DemoBtn
               title={"play now"}
               bgColor={"#D40000"}

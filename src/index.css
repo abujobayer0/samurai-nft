@@ -493,7 +493,7 @@ body.modal-open {
   width: 500vw;
   display: flex;
   padding: 30px;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   background-color: #111111;
   align-items: flex-start;
   flex-direction: row;
@@ -558,4 +558,7 @@ body.modal-open {
 }
 .temple-border {
   border: 0.659401px solid #ffffff;
+}
+.active {
+  background: #ec1c24;
 }

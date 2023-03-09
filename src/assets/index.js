@@ -24,8 +24,14 @@ import GitBookIcon from "./gitbookIcon.png";
 import FooterGradinet from "./gradientFooter.png";
 import TempleIcon from "./TempleIcon.png";
 import roadMap from "./roadMap.png";
+import marketwatch from "./marketwatch.png";
+import dexview from "./dexview.png";
+import coinmarketcap from "./coinmarketcap.png";
 export {
   Logo,
+  coinmarketcap,
+  marketwatch,
+  dexview,
   RioCoin,
   FooterGradinet,
   TempleIcon,

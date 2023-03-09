@@ -6,11 +6,11 @@ const CoinTab = ({ img, para }) => {
       className="flex  gap-9 items-start justify-center mx-auto mb-10 md:mb-0  w-full h-fit flex-col 
       lg:flex-row "
     >
-      <div className=" order-2 flex relative md:justify-end justify-center items-center md:items-end  md:pl-8">
+      <div className=" order-2 flex relative  mx-auto lg:justify-end justify-center items-center lg:items-end  lg:pl-8">
         <img
           loading="lazy"
           src={img}
-          className="w-full flex justify-center md:justify-end items-center md:items-end "
+          className="w-full flex justify-center lg:justify-end items-center lg:items-end "
           alt="coin"
         />
       </div>

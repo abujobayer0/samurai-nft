@@ -106,19 +106,37 @@ const Tokenomics = () => {
   return (
     <div className="max-w-[1400px] mx-auto px-5 my-20 lg:px-10 ">
       <Title head={"T"} sub={"okenomics"} />
-      <div className="grid grid-cols-1 lg:grid-cols-2 place-content-center place-items-center w-full lg:gap-44">
+      <div className="grid grid-cols-1 lg:grid-cols-2 place-content-end  place-items-end w-full lg:gap-44">
         <div className="w-full  h-[500px] flex items-center justify-center">
           <div id="main" style={{ width: "100%", height: "100%" }}></div>
         </div>
-        <div className="w-full flex flex-col justify-end gap-4 items-start">
-          {datas.map((data) => (
-            <li style={{ color: data.color, width: 330 }}>
-              <span style={{ color: "#fff" }}>
-                <span className="px-2">{data.value}%</span>
-                {data.name}
-              </span>
-            </li>
-          ))}
+        <div className="w-full  float-right">
+          <div className="w-full flex flex-col justify-end gap-4 items-end">
+            {datas.map((data) => (
+              <div
+                className="w-[420px]"
+                style={{
+                  color: "white",
+                  display: "flex",
+                  fontSize: "22px",
+                  gap: 4,
+                }}
+              >
+                <span
+                  style={{
+                    background: data.color,
+                    width: "30px",
+                    height: "30px",
+                    borderRadius: "100%",
+                  }}
+                ></span>
+                <span className="mt-2 text-[22px] md:text-[36px]">
+                  <span className="px-2">{data.value}%</span>
+                  <span>{data.name}</span>
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

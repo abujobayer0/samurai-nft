@@ -1,12 +1,15 @@
 import {
   binance,
+  coinmarketcap,
   DenkiImg,
   dextools,
+  dexview,
   FireIcon,
   googlePlay,
   hagonImg,
   KazeImg,
   LeafIcon,
+  marketwatch,
   MizuImg,
   pinkSale,
   PsyhicIcon,
@@ -92,7 +95,16 @@ const icons = [
     ),
   },
 ];
-const sponsers = [yahooFinance, googlePlay, binance, dextools, pinkSale];
+const sponsers = [
+  yahooFinance,
+  googlePlay,
+  binance,
+  dextools,
+  pinkSale,
+  marketwatch,
+  coinmarketcap,
+  dexview,
+];
 const tabsDetail = [
   {
     title: "Hagon",
@@ -102,7 +114,7 @@ const tabsDetail = [
     icon: FireIcon,
     img: hagonImg,
     btn: "fire",
-    id: 1,
+    id: "section1",
   },
   {
     title: "Mizu",
@@ -112,7 +124,7 @@ const tabsDetail = [
     icon: LeafIcon,
     img: MizuImg,
     btn: "leaf",
-    id: 2,
+    id: "section2",
   },
   {
     title: "Kaze",
@@ -122,7 +134,7 @@ const tabsDetail = [
     icon: PsyhicIcon,
     img: KazeImg,
     btn: "psyhic",
-    id: 3,
+    id: "section3",
   },
   {
     title: "Tsuchi",
@@ -132,7 +144,7 @@ const tabsDetail = [
     icon: WaterIcon,
     img: TsuchiImg,
     btn: "water",
-    id: 4,
+    id: "section4",
   },
   {
     title: "Denki",
@@ -142,7 +154,7 @@ const tabsDetail = [
     icon: SkyIcon,
     img: DenkiImg,
     btn: "sky",
-    id: 5,
+    id: "section5",
   },
 ];
 export { icons, tabsDetail, navLinks, sponsers };

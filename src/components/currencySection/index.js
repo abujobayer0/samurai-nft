@@ -45,7 +45,9 @@ const CurrencySection = () => {
             />
           )}
         </div>{" "}
-        <DemoBtn title={"learn more"} bgColor={"#11111"} color={"#fff"} />
+        <div className="px-5 lg:px-10">
+          <DemoBtn title={"learn more"} bgColor={"#11111"} color={"#fff"} />
+        </div>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import { Button, DemoBtn } from "../";
 const StepsSection = () => {
   return (
     <div className="w-full  transition duration-150 ease-in-out flex flex-col justify-start items-start  bg-transparent">
-      <h1 className="clash-700 mb-5 text-start md:mb-[30px] lg:mb-[70px] leading-[78px] text-[30px] sm:text-[40px]  md:text-[45px] lg:text-[60px]">
+      <h1 className="clash-700 mb-5 px-5 lg:px-10 text-start md:mb-[30px] lg:mb-[70px] leading-[78px] text-[30px] sm:text-[40px]  md:text-[45px] lg:text-[60px]">
         H<span className="bg-[#EC1C24] pr-8 lg:pr-12">ierarchy</span>
       </h1>
       <h1 className="gra-Leg-Btn uppercase pb-[10px] lg:pb-[21px] p-4 text-xs md:text-[26px] lg:text-[36px]">
@@ -33,7 +33,7 @@ const StepsSection = () => {
           <span>10 gold</span>
         </div>
       </div>
-      <div className="mt-10 lg:mt-0">
+      <div className="mt-10 px-5 lg:px-10 lg:mt-0">
         <DemoBtn title={"learn more"} bgColor={"#111111"} color={"#fff"} />
       </div>
     </div>

@@ -29,7 +29,7 @@ const TabContent = ({
               condition === "isWater" ? "water-effect" : ""
             } ${
               condition === "isSky" ? "sky-effect" : ""
-            } mb-5 lg:w-[700px] w-full   relative  text-[9px] lg:text-[16px]`}
+            } mb-5 lg:w-[700px] w-full   relative  lg:text-[16px]`}
           >
             {paragraph}
           </p>

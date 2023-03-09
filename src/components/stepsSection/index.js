@@ -29,8 +29,8 @@ const StepsSection = () => {
           <span>kensi</span>
           <span>.1bnb</span>
         </div>
-        <div className="uppercase right-[0%] lg:right-[4.4%] p-4 top-[70%] lg:top-[84%] sm:top-[70%]  md:top-[80%] xl:top-[82%] absolute  text-xs white-text-gra md:text-[26px] flex flex-col gap-4 sm:gap-10 lg:gap-16 lg:text-[36px]">
-          <span>BTx</span>
+        <div className="uppercase right-[0%] lg:-right-[2%] p-4 top-[70%] lg:top-[84%] sm:top-[70%]  md:top-[80%] xl:top-[82%] absolute  text-xs white-text-gra md:text-[26px] flex flex-col gap-4 sm:gap-10 lg:gap-16 lg:text-[36px]">
+          <span>Ancestral</span>
           <span>10 gold</span>
         </div>
       </div>

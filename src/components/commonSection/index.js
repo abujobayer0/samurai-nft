@@ -17,7 +17,7 @@ const CommonSection = ({
       {" "}
       <section className="grid overflow-hidden grid-cols-1 gap-10  md:grid-cols-2">
         <div
-          className={`max-w-[50vh] ${
+          className={`max-w-[50%] ${
             orderRev && "order-2"
           }  section section-1 flex justify-center  items-center max-h-[734px]`}
         >

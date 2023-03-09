@@ -17,9 +17,9 @@ const CommonSection = ({
       {" "}
       <section className="grid overflow-hidden grid-cols-1 gap-10  md:grid-cols-2">
         <div
-          className={`max-w-[50%] ${
+          className={`w-full ${
             orderRev && "order-2"
-          }  section section-1 flex justify-center  items-center max-h-[734px]`}
+          }  section section-1 flex justify-center  items-center `}
         >
           {/* <div className=" md:w-[240] lg:w-[400px]  mx-auto relative rounded-full md:h-[380px] lg:h-[500px]"> */}
           <img className="w-full h-full " src={img} alt="img" />

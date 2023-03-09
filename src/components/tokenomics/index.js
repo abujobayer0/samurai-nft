@@ -111,10 +111,10 @@ const Tokenomics = () => {
           <div id="main" style={{ width: "100%", height: "100%" }}></div>
         </div>
         <div className="w-full  float-right">
-          <div className="w-full flex flex-col justify-end gap-4 items-end">
+          <div className="w-full flex flex-col lg:justify-end gap-4 lg:items-end">
             {datas.map((data) => (
               <div
-                className="w-[420px]"
+                className="w-fit"
                 style={{
                   color: "white",
                   display: "flex",
@@ -125,10 +125,10 @@ const Tokenomics = () => {
                 <span
                   style={{
                     background: data.color,
-                    width: "30px",
-                    height: "30px",
+
                     borderRadius: "100%",
                   }}
+                  className="w-[15px] h-[15px] lg:w-[30px] lg:h-[30px]"
                 ></span>
                 <span className="mt-2 text-[22px] md:text-[36px]">
                   <span className="px-2">{data.value}%</span>

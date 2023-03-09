@@ -104,7 +104,7 @@ const Tokenomics = () => {
   }, [datas]);
 
   return (
-    <div className="max-w-[1400px] mx-auto px-5 my-20 lg:px-10 ">
+    <div className="max-w-7xl mx-auto px-5 my-20 lg:px-10 ">
       <Title head={"T"} sub={"okenomics"} />
       <div className="grid grid-cols-1 lg:grid-cols-2 place-content-end  place-items-end w-full lg:gap-44">
         <div className="w-full  h-[500px] flex items-center justify-center">

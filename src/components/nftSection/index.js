@@ -42,7 +42,7 @@ const NftSection = () => {
   console.log(navPosition);
   return (
     <>
-      <section className="max-w-[1400px]  mb-20 mt-32 tab-navigation mx-auto px-5 sm:px-10">
+      <section className="max-w-7xl  mb-20 mt-32 tab-navigation mx-auto px-5 sm:px-10">
         <h1 className="clash-700 mb-5 md:mb-[30px] lg:mb-[70px] leading-[78px] text-[30px] sm:text-[40px]  md:text-[45px] lg:text-[60px]">
           The <span className="bg-[#EC1C24] pr-8 lg:pr-12">Clans</span>
         </h1>

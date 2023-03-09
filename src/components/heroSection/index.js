@@ -3,7 +3,7 @@ import googlePlayStoreLogo from "../../assets/googlePlayStoreLogo.webp";
 const HeroSection = () => {
   return (
     <>
-      <section className="mt-[62px] mx-auto max-w-[1400px] px-5 sm:px-10">
+      <section className="mt-[62px] mx-auto max-w-7xl px-5 sm:px-10">
         <h1 className="clash-700  md:leading-[78px] uppercase text-center text-[30px] sm:text-[40px]  md:text-[45px] lg:text-[64px]">
           This world needs a samurai <br />
           <div className="relative pt-4  w-full flex flex-col justify-center items-center mx-auto text-center ">

@@ -35,7 +35,7 @@ const RoadMap = () => {
     "Addition Of Team Battle.",
   ];
   return (
-    <div className="max-w-[1400px] mx-auto relative">
+    <div className="max-w-7xl mx-auto relative">
       <div className="px-5 lg:px-10">
         <Title head={"Our"} sub={"RoadMap."} />
       </div>

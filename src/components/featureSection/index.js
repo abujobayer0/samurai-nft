@@ -5,7 +5,7 @@ import { CommonSection } from "../";
 const FeaturedSection = () => {
   return (
     <>
-      <section className="max-w-[1400px] mb-20 mt-32 mx-auto px-5 sm:px-10">
+      <section className="max-w-7xl mb-20 mt-32 mx-auto px-5 sm:px-10">
         <h1 className="clash-700 mb-10 md:mb-[79px] text-[28px] lg:text-[38px]">
           Featured & Partners
         </h1>

@@ -17,10 +17,10 @@ const HorizentalScroll = () => {
     const pin = gsap.fromTo(
       sectionRef.current,
       {
-        translateX: `${tabsDetail.length / tabsDetail.length}vw`,
+        translateX: `0vw`,
       },
       {
-        translateX: `-${tabsDetail.length * 100 - 100}vw`,
+        translateX: `-400vw`,
         ease: "none",
         duration: 1,
         scrollTrigger: {
@@ -60,7 +60,7 @@ const HorizentalScroll = () => {
 
   return (
     <>
-      <section className="scroll-section-outer hidden xl:block overflow-hidden max-w-[1400px]  ">
+      <section className="scroll-section-outer hidden xl:block overflow-hidden max-w-7xl  ">
         <div ref={triggerRef}>
           <TabNav setNav={setNav} />
           <div

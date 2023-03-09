@@ -67,18 +67,18 @@ const RoadMap = () => {
             <li>{item}</li>
           ))}
         </div>
-        <div className="absolute w-[400px] top-[44%] -right-32  text-[9px]  md:text-[16px] lg:text-[24px] text-[#BDBDBD] md:top-[74%] md:left-[30%] lg:top-[74%]  lg:left-[37%]">
+        <div className="absolute w-fit top-[44%] right-0  text-[9px]  md:text-[16px] lg:text-[24px] text-[#BDBDBD] md:top-[74%] md:left-[30%] lg:top-[74%]  lg:left-[37%]">
           {phrase3.map((item) => (
-            <h1 className="flex w-[400px] justify-start items-center gap-2 lg:gap-4">
+            <h1 className="flex w-fit justify-start items-center gap-2 lg:gap-4">
               {" "}
               <span className=" md:w-[10px] w-[4px] bg-[#BDBDBD] md:px-1 h-[4px] md:h-[10px] rounded-full "></span>
               {item}
             </h1>
           ))}
         </div>
-        <div className="absolute w-[400px]  bottom-0 left-5 text-[9px] md:text-[16px] lg:text-[24px] text-[#BDBDBD] md:top-[35%] md:left-[50%] lg:top-[20%]  lg:left-[65%]">
+        <div className="absolute w-fit  bottom-0 left-5 text-[9px] md:text-[16px] lg:text-[24px] text-[#BDBDBD] md:top-[35%] md:left-[50%] lg:top-[20%]  lg:left-[65%]">
           {phrase4.map((item) => (
-            <h1 className="flex w-[400px] justify-start items-center gap-2 md:gap-2 lg:gap-4">
+            <h1 className="flex w-fit justify-start items-center gap-2 md:gap-2 lg:gap-4">
               {" "}
               <span className=" w-[4px] md:w-[10px] bg-[#BDBDBD] h-[4px] md:h-[10px] rounded-full "></span>{" "}
               {item}

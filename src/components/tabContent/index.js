@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../";
+import { Button, DemoBtn } from "../";
 const TabContent = ({
   title,
   nav,
@@ -16,7 +16,7 @@ const TabContent = ({
 
       <section
         id={`${id}`}
-        className="grid lg:flex bg-transparent z-50 gap-2 md:gap-28  grid-cols-1 tab-content max-h-[100vh] px-10   relative lg:pt-44 max-w-[1200px]  md:mt-20 mx-0  mt-16 lg:mt-1 "
+        className="grid lg:flex bg-transparent z-50 gap-2 md:gap-28  grid-cols-1 tab-content max-h-[100vh] px-5 lg:px-10   relative lg:pt-44 max-w-7xl  md:mt-20 mx-0  mt-16 lg:mt-1 "
       >
         <div className="order-2  lg:order-none">
           <h1 className="clash-700 mb-0  leading-[78px] text-[30px] sm:text-[40px]  md:text-[45px] lg:text-[60px]">
@@ -33,7 +33,7 @@ const TabContent = ({
           >
             {paragraph}
           </p>
-          <Button icon={icon} title={btn} />
+          <Button title={btn} icon={icon} />
         </div>
         <div className="lg:max-w-[410px] sm:mt-1 md:mt-16 lg:mt-0 relative md:max-w-[335px] md:max-h-[524px] max-w-[240px] mx-auto h-[300px] lg:max-h-[600px] flex justify-center items-center">
           <div

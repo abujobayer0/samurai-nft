@@ -1,6 +1,6 @@
 import React from "react";
 
-const DemoBtn = ({ title, color, bgColor, green, dotColor }) => {
+const DemoBtn = ({ title, color, bgColor, dotColor }) => {
   return (
     <div className="w-fit  flex justify-center items-center">
       <button className="w-fit  relative">
@@ -65,12 +65,12 @@ const DemoBtn = ({ title, color, bgColor, green, dotColor }) => {
           style={{ background: dotColor }}
         ></span>
         <span
-          className="w-[7px] h-[7px] z-30 absolute bottom-[40px] right-[26px] "
+          className="w-[7px] h-[7px] hidden md:block z-30 absolute bottom-[40px] right-[26px] "
           style={{ background: dotColor }}
         ></span>
         <span
           style={{ background: bgColor }}
-          className={`  px-[47px] py-[10px]   childBtn`}
+          className={`  px-[30px] md:px-[47px] py-[10px]   childBtn`}
         >
           {title}
         </span>

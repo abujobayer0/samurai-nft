@@ -1,6 +1,6 @@
 import React from "react";
 import { StepsLine } from "../../assets";
-import { Button } from "../";
+import { Button, DemoBtn } from "../";
 const StepsSection = () => {
   return (
     <div className="w-full  transition duration-150 ease-in-out flex flex-col justify-start items-start  bg-transparent">
@@ -34,7 +34,7 @@ const StepsSection = () => {
         </div>
       </div>
       <div className="mt-10 lg:mt-0">
-        <Button isSecondary title={"learn more"} />
+        <DemoBtn title={"learn more"} bgColor={"#111111"} color={"#fff"} />
       </div>
     </div>
   );

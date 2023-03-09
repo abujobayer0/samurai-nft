@@ -30,7 +30,7 @@ const NavBar = () => {
         {icons.map((icon, indx) => (
           <button
             key={indx}
-            className="bg-[#8C8C8C] flex items-center justify-center h-[51px] rounded-2xl w-[53px]"
+            className="border-[#8C8C8C] bg-[#303030] border-[#] border-2 flex items-center justify-center h-[51px] rounded-2xl w-[53px]"
           >
             {" "}
             <span className="w-[30px] ">{icon.icon}</span>
@@ -58,7 +58,7 @@ const NavBar = () => {
       </div>
       {toggle && (
         <nav
-          className={` fixed  px-5 sm:px-10  py-2 bg-black top-0 left-0 min-h-screen z-50   w-full
+          className={` fixed w-full px-5 sm:px-10  py-2 bg-black top-0 left-0 min-h-screen z-50   
           }`}
         >
           <button
@@ -93,7 +93,7 @@ const NavBar = () => {
               {icons.map((icon, indx) => (
                 <button
                   key={indx}
-                  className="bg-[#8C8C8C] flex items-center justify-center h-[51px] rounded-2xl w-[53px]"
+                  className="border-2 border-[#8C8C8C] bg-[#303030] flex items-center justify-center h-[51px] rounded-2xl w-[53px]"
                 >
                   {" "}
                   <span className="w-[30px] ">{icon.icon}</span>

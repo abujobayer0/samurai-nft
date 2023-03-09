@@ -15,7 +15,7 @@ const TabNav = ({ setNav, nav }) => {
   });
   return (
     <>
-      <ul className="max-w-[1200px] mx-auto py-2  px-4 clash-700 hidden lg:flex transition duration-150 ease-linear items-center justify-around rounded-full bg-[#212121]">
+      <ul className="max-w-7xl py-2 mx-5 lg:mx-10  clash-700 hidden lg:flex transition duration-150 ease-linear items-center justify-around rounded-full bg-[#212121]">
         {btns.map((btn) => (
           <li
             key={btn.id}

@@ -33,7 +33,7 @@ const StepsSection = () => {
           <span>10 gold</span>
         </div>
       </div>
-      <div className="mt-10 px-5 lg:px-10 lg:mt-0">
+      <div className="mt-10 px-2 lg:mt-0">
         <DemoBtn title={"learn more"} bgColor={"#111111"} color={"#fff"} />
       </div>
     </div>

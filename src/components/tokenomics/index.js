@@ -110,8 +110,8 @@ const Tokenomics = () => {
         <div className="w-full  h-[500px] flex items-center justify-center">
           <div id="main" style={{ width: "100%", height: "100%" }}></div>
         </div>
-        <div className="w-full  float-right">
-          <div className="w-full flex flex-col lg:justify-end gap-4 lg:items-end">
+        <div className="w-full ">
+          <div className="w-full flex flex-col   gap-4">
             {datas.map((data) => (
               <div
                 className="w-fit"

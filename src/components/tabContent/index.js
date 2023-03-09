@@ -16,7 +16,7 @@ const TabContent = ({
 
       <section
         id={`${id}`}
-        className="grid lg:flex bg-transparent z-50 gap-28  grid-cols-1 tab-content max-h-[100vh]   relative lg:pt-44 max-w-[1200px]  md:mt-20 mx-0  mt-16 lg:mt-1 "
+        className="grid lg:flex bg-transparent z-50 gap-2 md:gap-28  grid-cols-1 tab-content max-h-[100vh]   relative lg:pt-44 max-w-[1200px]  md:mt-20 mx-0  mt-16 lg:mt-1 "
       >
         <div className="order-2  lg:order-none">
           <h1 className="clash-700 mb-0  leading-[78px] text-[30px] sm:text-[40px]  md:text-[45px] lg:text-[60px]">
@@ -29,7 +29,7 @@ const TabContent = ({
               condition === "isWater" ? "water-effect" : ""
             } ${
               condition === "isSky" ? "sky-effect" : ""
-            } mb-5 lg:w-[700px] relative text-[16px]`}
+            } mb-5 lg:w-[700px] w-full  relative text-[16px]`}
           >
             {paragraph}
           </p>

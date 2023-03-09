@@ -5,24 +5,24 @@ const Tokenomics = () => {
   const [radius, setRadius] = useState([40, 200]);
   const datas = [
     {
-      value: 16,
+      value: 50,
       name: "PRESALE",
       color: "#D17D00",
     },
     {
-      value: 16,
+      value: 40,
       name: "LIQUIDITY",
       color: "#0FCBD7",
     },
-    { value: 36, name: "GAME REWARD", color: "#3FBF1B" },
-    { value: 5, name: "AIRDROP", color: "#5B65E8" },
-    { value: 7, name: "CEX LISTING", color: "#D17D00" },
+    { value: 70, name: "GAME REWARD", color: "#3FBF1B" },
+    { value: 36, name: "AIRDROP", color: "#5B65E8" },
+    { value: 36, name: "CEX LISTING", color: "#D17D00" },
     {
-      value: 12,
+      value: 47,
       name: "DEVELOPMENT ",
       color: "#A5B00E",
     },
-    { value: 6.4, name: "MARKETING ", color: "#F6C165" },
+    { value: 26, name: "MARKETING ", color: "#F6C165" },
   ];
   const updateRadius = () => {
     const screenWidth = window.innerWidth;
@@ -66,10 +66,10 @@ const Tokenomics = () => {
       },
       series: [
         {
-          name: "Access From",
+          name: "Access Form",
           type: "pie",
           radius: ["40%", "70%"],
-          avoidLabelOverlap: true,
+          roseType: "radius",
           label: {
             show: false,
             position: "center",

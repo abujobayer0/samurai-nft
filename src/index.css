@@ -324,9 +324,9 @@ body {
   background: linear-gradient(85.91deg, #ff3030 -4.96%, #e6dd0f 95%);
 }
 .hagon {
-  background: linear-gradient(85.91deg, #ff3030 -4.96%, #e6dd0f 95%);
+  background: #e44516;
 }
-
+/* linear-gradient(85.91deg, #ff3030 -4.96%, #e6dd0f 95%); */
 .MizuBtn::before {
   background: linear-gradient(92.72deg, #3fbf1b -3.17%, #cfa908 96.95%);
 }
@@ -334,7 +334,8 @@ body {
   background: linear-gradient(92.72deg, #3fbf1b -3.17%, #cfa908 96.95%);
 }
 .mizu {
-  background: linear-gradient(92.72deg, #3fbf1b -3.17%, #cfa908 96.95%);
+  /* background: linear-gradient(92.72deg, #3fbf1b -3.17%, #cfa908 96.95%); */
+  background-color: #a9af0d;
 }
 
 .KazeBtn::before {
@@ -344,7 +345,8 @@ body {
   background: linear-gradient(85.73deg, #fabf00 -5.28%, #c36801 95.55%);
 }
 .kaze {
-  background: linear-gradient(85.73deg, #fabf00 -5.28%, #c36801 95.55%);
+  /* background: linear-gradient(85.73deg, #fabf00 -5.28%, #c36801 95.55%); */
+  background-color: #dc8f01;
 }
 
 .TsuchiBtn::before {
@@ -354,7 +356,8 @@ body {
   background: linear-gradient(87.44deg, #5a64ea -0.29%, #ffffff 92.12%);
 }
 .tSuchi {
-  background: linear-gradient(87.44deg, #5a64ea -0.29%, #ffffff 92.12%);
+  /* background: linear-gradient(87.44deg, #5a64ea -0.29%, #ffffff 92.12%); */
+  background-color: #a4a9f4;
 }
 
 .DenkiBtn::before {
@@ -374,13 +377,16 @@ body {
   );
 }
 .denki {
-  background: linear-gradient(
+  /* background: linear-gradient(
     267.25deg,
     #edc174 1.12%,
     #f5c167 57.43%,
     #c4bfb5 100.31%
-  );
+  ); */
+
+  background-color: #e1c086;
 }
+
 /* i am working on button color now */
 .appleStore {
   background: #a6a6a6;

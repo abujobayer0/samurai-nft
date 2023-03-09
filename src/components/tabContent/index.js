@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, DemoBtn } from "../";
+import { Button } from "../";
 const TabContent = ({
   title,
   nav,
@@ -15,7 +15,7 @@ const TabContent = ({
       {/* <div className="  "> */}
 
       <section
-        id={`${id}`}
+        id={id}
         className="grid lg:flex bg-transparent z-50 gap-2 md:gap-28  grid-cols-1 tab-content max-h-[100vh]   relative lg:pt-44 max-w-7xl  md:mt-20 mx-0  mt-16 lg:mt-1 "
       >
         <div className="order-2  lg:order-none">

@@ -60,9 +60,9 @@ const HorizentalScroll = () => {
 
   return (
     <>
-      <section className="scroll-section-outer hidden xl:block overflow-hidden max-w-7xl  ">
+      <section className="scroll-section-outer hidden xl:block overflow-hidden max-w-[1400px]  ">
         <div ref={triggerRef}>
-          <TabNav setNav={setNav} />
+          <TabNav />
           <div
             ref={sectionRef}
             className="scroll-section-inner transition duration-100 ease-in-out flex justify-center items-center p-0 min-h-[80vh]"
@@ -70,6 +70,7 @@ const HorizentalScroll = () => {
             {tabsDetail.map((tab, indx) => (
               <div
                 key={indx}
+                id={tab.id}
                 className="scroll-section flex justify-center m-0 items-center z-50 "
               >
                 <TabContent

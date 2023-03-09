@@ -20,7 +20,7 @@ const Footer = () => {
               className="bg-transparent text-sm outline-none h-14 md:h-16 rounded-full flex-1"
               placeholder="Type Your Email Here..."
             />
-            <button className="  h-12 md:h-16 rounded-full px-2 text-sm bg-[#ec1c24]">
+            <button className="  h-12 md:h-16 rounded-full px-4 lg:px-8 text-sm bg-[#ec1c24]">
               Subscribe
             </button>
           </div>

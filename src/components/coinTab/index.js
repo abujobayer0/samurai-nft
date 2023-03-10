@@ -1,10 +1,11 @@
 import React from "react";
 import { GoldCoin, RioCoin } from "../../assets";
+import { DemoBtn } from "../";
 
 const CoinTab = ({ img, para }) => {
   return (
     <div
-      className="flex relative -top-4  gap-9 items-center justify-center mx-auto mb-10 md:mb-0  w-full h-fit flex-col 
+      className="flex relative lg:-top-2 top-4 gap-9 items-center justify-center mx-auto  w-full h-fit flex-col 
       lg:flex-row "
     >
       <div className=" order-2 flex relative w-full  mx-auto lg:justify-end justify-center items-center lg:items-end  lg:pl-8">
@@ -17,10 +18,13 @@ const CoinTab = ({ img, para }) => {
           alt="coin"
         />
       </div>
-      <div className="w-full flex items-center  ">
+      <div className="w-full flex flex-col  items-start  justify-start ">
         <p className="text-xs   md:text-[16px] leading-6  fire-effect">
           {para}
-        </p>
+        </p>{" "}
+        <div className="px-2 mt-[36px] relative">
+          <DemoBtn title={"learn more"} bgColor={"#11111"} color={"#fff"} />
+        </div>
       </div>
     </div>
   );

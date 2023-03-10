@@ -25,11 +25,11 @@ const StepsSection = () => {
           <span>ronin</span>
           <span>25 bnb</span>
         </div>
-        <div className="uppercase right-[20%] lg:right-[28%] p-4 top-[50%] lg:top-[64%] sm:top-[50%]  md:top-[60%] xl:top-[62%] absolute  text-xs green-text-gra md:text-[26px] flex flex-col gap-4 sm:gap-10 lg:gap-16  lg:text-[36px]">
+        <div className="uppercase right-[20%] lg:right-[27%] xl:right-[28%] p-4 top-[50%] lg:top-[64%] sm:top-[50%]  md:top-[60%] xl:top-[62%] absolute  text-xs green-text-gra md:text-[26px] flex flex-col gap-4 sm:gap-10 lg:gap-16  lg:text-[36px]">
           <span>kensi</span>
           <span>.1bnb</span>
         </div>
-        <div className="uppercase right-[0%] lg:-right-[2%] p-4 top-[70%] lg:top-[84%] sm:top-[70%]  md:top-[80%] xl:top-[82%] absolute  text-xs white-text-gra md:text-[26px] flex flex-col gap-4 sm:gap-10 lg:gap-16 lg:text-[36px]">
+        <div className="uppercase right-[0%] lg:-right-[4%] xl:-right-[2%] p-4 top-[70%] lg:top-[84%] sm:top-[70%]  md:top-[80%] xl:top-[82%] absolute  text-xs white-text-gra md:text-[26px] flex flex-col gap-4 sm:gap-10 lg:gap-16 lg:text-[36px]">
           <span>Ancestral</span>
           <span>10 gold</span>
         </div>

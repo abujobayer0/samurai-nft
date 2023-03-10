@@ -7,7 +7,7 @@ const CurrencySection = () => {
     <div>
       <div className="max-w-7xl    px-5 lg:px-10  mb-20 transition duration-150 ease-in-out flex flex-col justify-start items-start mx-auto  bg-transparent">
         <Title head={"The"} sub={"Currency"} />
-        <ul className="lg:w-[510px] mb-10  md:w-[500px] w-[300px] px-4 clash-700 flex transition duration-150 ease-linear items-center justify-around rounded-full bg-[#212121]">
+        <ul className="lg:w-[510px]  md:w-[500px] w-[300px] px-4 clash-700 flex transition duration-150 ease-linear items-center justify-around rounded-full bg-[#212121]">
           <button onClick={() => setTab(0)}>
             <li
               className={` w-[137px] md:w-[187px] ${

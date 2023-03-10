@@ -8,12 +8,12 @@ const StepsSection = () => {
         H<span className="bg-[#EC1C24] pr-8 lg:pr-12">ierarchy</span>
       </h1>
 
-      <div className="relative mt-[100px] max-w-7xl">
-        <h1 className="gra-Leg-Btn  uppercase pb-[10px] lg:pb-[21px] py-4 absolute -top-[70px] text-xs md:text-[26px] lg:text-[36px] ">
+      <div className="relative mt-[50px] md:mt-[100px] max-w-7xl">
+        <h1 className="gra-Leg-Btn  uppercase pb-[10px] lg:pb-[21px] py-4 absolute -top-[40px] md:-top-[70px] text-xs md:text-[26px] lg:text-[36px] ">
           Legendary
         </h1>
         <img src={StepsLine} className="w-full relative" alt="" />
-        <span className="uppercase left-[0px] top-2 sm:top-2 sm:left-[0px] md:top-[21px] md:left-[0px] lg:top-[21px] gra-Leg-Btn lg:left-[0px] xl:left-[0px] pb-[10px] py-4 absolute lg:pb-[21px] text-xs md:text-[26px] lg:text-[36px]">
+        <span className="uppercase left-[0px] -top-2 sm:top-2 sm:left-[0px] md:top-[21px] md:left-[0px] lg:top-[21px] gra-Leg-Btn lg:left-[0px] xl:left-[0px] pb-[10px] py-4 absolute lg:pb-[21px] text-xs md:text-[26px] lg:text-[36px]">
           1bnb
         </span>
 
@@ -25,11 +25,11 @@ const StepsSection = () => {
           <span>ronin</span>
           <span>25 bnb</span>
         </div>
-        <div className="uppercase right-[20%] lg:right-[27%] xl:right-[28%] p-4 top-[50%] lg:top-[64%] sm:top-[50%]  md:top-[60%] xl:top-[62%] absolute  text-xs green-text-gra md:text-[26px] flex flex-col gap-4 sm:gap-10 lg:gap-16  lg:text-[36px]">
+        <div className="uppercase  right-[25%]  lg:right-[27%] xl:right-[28%] p-4 top-[50%] lg:top-[64%] sm:top-[50%]  md:top-[60%] xl:top-[62%] absolute  text-xs green-text-gra md:text-[26px] flex flex-col gap-4 sm:gap-10 lg:gap-16  lg:text-[36px]">
           <span>kensi</span>
           <span>.1bnb</span>
         </div>
-        <div className="uppercase right-[0%] lg:-right-[3%] p-4 top-[70%] lg:top-[84%] sm:top-[70%]  md:top-[80%] xl:top-[82%] absolute  text-xs white-text-gra md:text-[26px] flex flex-col gap-4 sm:gap-10 lg:gap-16 lg:text-[36px]">
+        <div className="uppercase -right-[2%] lg:-right-[3%] p-4 top-[70%] lg:top-[84%] sm:top-[70%]  md:top-[80%] xl:top-[82%] absolute  text-xs white-text-gra md:text-[26px] flex flex-col gap-4 sm:gap-10 lg:gap-16 lg:text-[36px]">
           <span>Ancestral</span>
           <span>10 gold</span>
         </div>

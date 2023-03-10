@@ -9,7 +9,7 @@ const FeaturedSection = () => {
         <h1 className="clash-700 mb-10 md:mb-[70px] text-[28px] lg:text-[38px]">
           Featured & Partners
         </h1>
-        <div className="flex w-full ">
+        <div className="flex max-w-7xl overflow-hidden lg:overflow-visible  lg:w-full ">
           <div className="flex flex-container  gap-10 mb-[100px] lg:mb-20 md:gap-8  lg:gap-[61px]  flex-row items-center  relative justify-center  ">
             {sponsers.map((img) => (
               <img

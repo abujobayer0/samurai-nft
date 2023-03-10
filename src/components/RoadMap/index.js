@@ -57,7 +57,7 @@ const RoadMap = () => {
         <div className="absolute top-[100%] lg:top-[40%] lg:right-[5%] md:top-[50%] right-[70%] md:right-[0%]">
           <TemplePoint no={"4"} TempleIcon={TempleIcon} />
         </div>
-        <div className="absolute text-[9px] -top-8 right-[30%] md:text-[16px]  text-[#BDBDBD]  lg:text-[24px] lg:-top-10 md:left-5 md:top-44 lg:left-[23%]">
+        <div className="absolute text-[9px] -top-8 right-[30%] md:text-[16px]  text-[#BDBDBD]  lg:text-[24px] lg:-top-10 md:left-5 md:top-44 lg:left-[24%]">
           {phrase1.map((item) => (
             <li>{item}</li>
           ))}
@@ -67,7 +67,7 @@ const RoadMap = () => {
             <li>{item}</li>
           ))}
         </div>
-        <div className="absolute w-fit top-[44%] right-0  text-[9px]  md:text-[16px] lg:text-[24px] text-[#BDBDBD] md:top-[74%] md:left-[30%] lg:top-[74%]  lg:left-[37%]">
+        <div className="absolute w-fit top-[44%] right-0  text-[9px]  md:text-[16px] lg:text-[24px] text-[#BDBDBD] md:top-[74%] md:left-[30%] lg:top-[75%]  lg:left-[37%]">
           {phrase3.map((item) => (
             <h1 className="flex w-fit justify-start items-center gap-2 lg:gap-4">
               {" "}

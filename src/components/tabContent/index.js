@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "../";
 const TabContent = ({
   title,
-  nav,
+  width,
   paragraph,
   icon,
   id,
@@ -16,7 +16,7 @@ const TabContent = ({
 
       <section
         id={id}
-        className="grid lg:flex bg-transparent  z-50 gap-2 md:gap-28  grid-cols-1 tab-content max-h-[100vh]   relative lg:pt-44 max-w-7xl  md:mt-20 mx-0   lg:mt-1 "
+        className="grid lg:flex bg-transparent  z-50 gap-2 md:gap-22  grid-cols-1 tab-content max-h-[100vh]   relative lg:pt-44 max-w-7xl  md:mt-20 mx-0   lg:mt-1 "
       >
         <div className="order-2 relative  lg:order-none">
           <h1 className="clash-700 mb-0 absolute -top-28 leading-[78px] text-[30px] sm:text-[40px]  md:text-[45px] lg:text-[60px]">
@@ -37,9 +37,9 @@ const TabContent = ({
             <Button title={btn} icon={icon} />
           </div>
         </div>
-        <div className="lg:max-w-[410px] sm:mt-1 md:mt-16 lg:mt-0 relative md:max-w-[335px] md:max-h-[524px] max-w-[240px] mx-auto h-[300px] lg:max-h-[600px] flex justify-center items-center">
+        <div className="lg:max-w-[410px] sm:mt-1 md:mt-16 lg:mt-0 relative md:max-w-[335px] md:max-h-[524px] max-w-[240px] mx-auto h-[300px] lg:max-h-[600px] flex justify-center  items-center">
           <div
-            className={`lg:w-[500px]  md:w-[300px]  md:h-[300px] bottom-0 md:top-0 lg:bottom-10 w-[250px] h-[250px] lg:h-[500px]  absolute   -z-10  mt-0  mx-auto sm:rounded-[50px] rounded-[40px] lg:rounded-[81px] ${
+            className={`lg:w-[450px]  md:w-[300px]  md:h-[300px] bottom-0 md:top-0 lg:bottom-10 w-[250px] h-[250px] lg:h-[450px]  absolute   -z-10 -mt-4  mx-auto sm:rounded-[50px] rounded-[40px] lg:rounded-[81px] ${
               condition === "isFire" &&
               "bg-gradient-to-t from-orange-600 to-red-600"
             }
@@ -65,7 +65,7 @@ const TabContent = ({
           ) : (
             <img
               loading="lazy"
-              className=" md:min-w-[300px] relative  xl:min-w-[500px]  z-30 mx-auto"
+              className={`md:min-w-[300px] relative   xl:min-w-[${width}]  z-30 mx-auto `}
               src={img}
               alt=""
             />

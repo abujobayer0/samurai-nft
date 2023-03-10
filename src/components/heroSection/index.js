@@ -32,7 +32,7 @@ const HeroSection = () => {
             <DemoBtn title={"learn more"} bgColor={"#111111"} color={"#ffff"} />
           </div>
           <div className="flex mx-auto justify-center items-center w-full gap-2 mt-[32px]">
-            <button className="flex  w-[180px] h-[52px] items-center border-2 px-4 md:pl-[17px] rounded-xl gap-2 py-[9px]">
+            <button className="flex  w-[180px] md:w-[200px] h-[52px] items-center border-2 px-8 md:pl-[17px] rounded-xl gap-[19px] py-[9px]">
               <svg
                 width="24"
                 height="24"
@@ -50,15 +50,15 @@ const HeroSection = () => {
                 />
               </svg>
               <p className="font-clash flex flex-col justify-start items-start">
-                <span className="text-[8px] md:text-xs lg:text-sm gap-1 flex ">
-                  Download on <span className="hidden lg:block"> the</span>{" "}
+                <span className="text-[8px] w-full md:text-xs lg:text-sm  flex ">
+                  Download on the
                 </span>
                 <h2 className="text-[12px] md:text-sm font-semibold">
                   App Store
                 </h2>
               </p>
             </button>
-            <button className="flex  w-[180px] h-[52px] items-center border-2 px-[17px] rounded-xl gap-2 py-[9px]">
+            <button className="flex w-[180px]  md:w-[200px]  h-[52px] items-center border-2 px-[17px] rounded-xl gap-2 py-[9px]">
               <img className="w-[18px]" src={googlePlayStoreLogo} alt="icon" />
               <p className="font-clash flex flex-col justify-start items-start ">
                 <span className="text-[8px] md:text-sm ">Get it on</span>

@@ -22,8 +22,9 @@ const AccordionItem = ({ header, no, ...rest }) => (
 
 export default function Faq() {
   return (
-    <div className={"max-w-7xl px-5 lg:px-10 mx-auto mb-32"}>
-      <Title head={"Frequently Aske"} sub={"d Question"} />
+    <div className={"max-w-7xl px-5 lg:px-10  mx-auto mb-32"}>
+      <Title size={"40px"} head={"Frequently Aske"} sub={"d Question"} />
+
       <Accordion transition transitionTimeout={200}>
         <AccordionItem no={"001"} header="What is 0xSamurai?">
           0xSamurai is a blockchain-based game that allows players to collect

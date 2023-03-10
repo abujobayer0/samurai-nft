@@ -47,20 +47,19 @@ const NftSection = () => {
           The <span className="bg-[#EC1C24] pr-8 lg:pr-12">Clans</span>
         </h1>
 
-        <div className="flex flex-col justify-center items-center w-full  ">
+        <div className="flex flex-col  w-full  ">
           <div className="relative">
             <ClanTabs
               tabOne={
                 <TabContent
-                  title={"Hagon"}
-                  width={"450px"}
+                  title={"Denki"}
+                  condition={"isSky"}
                   paragraph={
-                    "The Hagon Clan is known for its members' mastery of fire-based combat techniques. Fire is the primary skill of the Hagon Clan, and its members are trained to harness its power to devastating effect on the battlefield. Through intense training and dedication, the Hagon Clan has developed unique abilities that allow them to manipulate flames in a variety of ways. Their attacks can burn through armor and shields, leaving their opponents defenseless. The Hagon Clan also has a reputation for their unwavering loyalty to their allies and their fierce determination to protect their homeland. With their fiery skills and unyielding spirit, the members of the Hagon Clan are a force to be reckoned with."
+                    "The Denki clan is a powerful group of warriors who specialize in harnessing the power of the sky and air to dominate their opponents. As the leaders of the skies, the members of the Denki clan are known for their lightning-fast reflexes and lightning-based attacks. They are able to command the very elements around them, summoning powerful gusts of wind and bolts of lightning to strike down their enemies. With their unparalleled control over the air and sky, the Denki clan is a force to be reckoned with in any battle."
                   }
-                  icon={FireIcon}
-                  img={hagonImg}
-                  btn={"fire"}
-                  condition={"isFire"}
+                  icon={SkyIcon}
+                  img={DenkiImg}
+                  btn={"sky"}
                 />
               }
               tabTwo={

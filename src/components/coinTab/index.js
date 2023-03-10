@@ -4,7 +4,7 @@ import { GoldCoin, RioCoin } from "../../assets";
 const CoinTab = ({ img, para }) => {
   return (
     <div
-      className="flex  gap-9 items-center justify-center mx-auto mb-10 md:mb-0  w-full h-fit flex-col 
+      className="flex relative -top-4  gap-9 items-center justify-center mx-auto mb-10 md:mb-0  w-full h-fit flex-col 
       lg:flex-row "
     >
       <div className=" order-2 flex relative w-full  mx-auto lg:justify-end justify-center items-center lg:items-end  lg:pl-8">

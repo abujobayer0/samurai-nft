@@ -9,49 +9,73 @@ const Tokenomics = () => {
 
   const datas = [
     {
-      id: "rust",
-      title: "rust",
-      value: 279,
-      color: "hsl(296, 70%, 50%)",
+      id: "Presale",
+      title: "Presale",
+      value: 80,
+      color: "#D17D00",
     },
     {
-      id: "stylus",
-      title: "stylus",
-      value: 312,
-      color: "hsl(166, 70%, 50%)",
+      id: "liquidity",
+      title: "liquidity",
+      value: 120,
+      color: "#0FCBD7",
     },
     {
-      id: "python",
-      title: "python",
-      value: 429,
-      color: "hsl(111, 70%, 50%)",
+      id: "game reward",
+      title: "game reward",
+      value: 200,
+      color: "#3FBF1B",
     },
     {
-      id: "make",
-      title: "make",
-      value: 189,
-      color: "hsl(88, 70%, 50%)",
+      id: "airdrop",
+      title: "airdrop",
+      value: 350,
+      color: "#DF9400",
     },
     {
-      id: "css",
-      title: "css",
-      value: 448,
-      color: "hsl(76, 70%, 50%)",
+      id: "cex marketing",
+      title: "cex marketing",
+      value: 50,
+      color: "#A5B00E",
+    },
+    {
+      id: "marketing and aprtnership",
+      title: "marketing and aprtnership",
+      value: 60,
+      color: "#F6C165",
+    },
+    {
+      id: "further developement and ecosystem maintence",
+      title: "further developement and ecosystem maintence",
+      value: 150,
+      color: "#A5B00E",
     },
   ];
   const data = {
-    labels: ["rust", "stylus", "python", "make", "css"],
+    labels: [
+      "Presale",
+      "liquidity",
+      "game reward",
+      "airdrop",
+      "cex listing",
+      "marketing and partnership",
+      "further developement and ecosystem maintence",
+    ],
     datasets: [
       {
         label: "Tokenomics",
-        data: [279, 312, 429, 189, 448],
+        data: [80, 120, 200, 350, 50, 60, 150],
         backgroundColor: [
-          "hsl(296, 70%, 50%)",
-          "hsl(166, 70%, 50%)",
-          "hsl(111, 70%, 50%)",
-          "hsl(88, 70%, 50%)",
-          "hsl(76, 70%, 50%)",
+          "#D17D00",
+          "#0FCBD7",
+          "#3FBF1B",
+          "#DF9400",
+          "#A5B00E",
+          "#F6C165",
+          "#5B65E8",
         ],
+        borderColor: ["#111111"],
+        borderWidth: 7,
       },
     ],
   };
@@ -68,6 +92,11 @@ const Tokenomics = () => {
                   display: true,
                   text: "Tokenomics",
                 },
+                elements: {
+                  arc: {
+                    borderRadius: 40, // set the border radius here
+                  },
+                },
                 legend: {
                   display: false,
                   position: "right",
@@ -76,8 +105,8 @@ const Tokenomics = () => {
             }}
           />
         </div>
-        <div className="w-full relative ">
-          <div className="w-full flex relative right-0 flex-col   gap-4">
+        <div className="w-full relative  flex justify-end items-end">
+          <div className="w-[400px] flex justify-end  lg:items-start flex-col   gap-4">
             {datas.map((data) => (
               <div
                 className="w-fit"
@@ -96,9 +125,9 @@ const Tokenomics = () => {
                   }}
                   className="w-[15px] h-[15px] lg:w-[30px] lg:h-[30px]"
                 ></span>
-                <span className="mt-2 text-[22px] md:text-[36px]">
+                <span className="mt-2 text-[22px] md:text-[30px]">
                   <span className="px-2">{data.value}%</span>
-                  <span>{data.name}</span>
+                  <span>{data.title}</span>
                 </span>
               </div>
             ))}

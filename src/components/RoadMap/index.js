@@ -36,7 +36,7 @@ const RoadMap = () => {
   ];
   return (
     <div className="max-w-7xl mb-[70px] md:mb-0 mx-auto relative">
-      <div className="px-5 mb-10 md:mb-0 lg:px-10">
+      <div className="px-5  mb-20 md:mb-0 lg:px-10">
         <Title head={"Our"} sub={"RoadMap."} />
       </div>
       <div className="w-full relative">

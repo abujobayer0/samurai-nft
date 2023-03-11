@@ -76,7 +76,7 @@ const Tokenomics = () => {
         ],
         borderColor: ["#111111"],
         borderWidth: 7,
-        hoverOffset: 25,
+        hoverOffset: 30,
       },
     ],
   };

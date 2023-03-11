@@ -20,6 +20,7 @@ const App = () => {
       <HeroSection />
       <FeaturedSection />
       <NftSection />
+
       <CurrencySection />
       <RoadMap />
       <Tokenomics />

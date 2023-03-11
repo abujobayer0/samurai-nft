@@ -48,7 +48,7 @@ const NftSection = () => {
         </h1>
 
         <div className="flex flex-col  w-full  ">
-          <div className="relative">
+          <div className="">
             <ClanTabs
               tabOne={
                 <TabContent
@@ -112,7 +112,7 @@ const NftSection = () => {
               }
             />
           </div>
-          <div className="mt-0 lg:mt-10 ">
+          <div className=" mt-80 sm:mt-52 lg:mt-10 ">
             <StepsSection />
           </div>
         </div>

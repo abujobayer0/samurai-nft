@@ -18,7 +18,7 @@ const ClanTabs = ({ tabOne, tabTwo, tabThree, tabFour, tabFive }) => {
 
   return (
     <section className=" relative">
-      <ul className="w-full mb-[20px]  px-4 clash-700 flex transition duration-150 ease-linear items-center justify-around rounded-full bg-[#212121]">
+      <ul className="w-full mb-[20px] relative px-4 clash-700 flex transition duration-150 ease-linear items-center justify-around rounded-full bg-[#212121]">
         <li
           className={`w-full  flex tab-item justify-center items-center px-1 sm:px-4 md:px-6  md:h-[60px] sm:h-[40px] h-[30px] lg:h-[71px] rounded-full m-2 md:text-xl sm:text-lg cursor-pointer text-xs lg:text-3xl ${
             activeTab === 1 ? "active" : ""

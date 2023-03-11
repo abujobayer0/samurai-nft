@@ -5,24 +5,35 @@ import { Title } from "../";
 const Tokenomics = () => {
   const datas = [
     {
-      value: 50,
-      label: "PRESALE",
-      color: "#D17D00",
+      id: "rust",
+      label: "rust",
+      value: 279,
+      color: "hsl(296, 70%, 50%)",
     },
     {
-      value: 40,
-      label: "LIQUIDITY",
-      color: "#0FCBD7",
+      id: "stylus",
+      label: "stylus",
+      value: 312,
+      color: "hsl(166, 70%, 50%)",
     },
-    { value: 70, label: "GAME REWARD", color: "#3FBF1B" },
-    { value: 36, label: "AIRDROP", color: "#5B65E8" },
-    { value: 36, label: "CEX LISTING", color: "#D17D00" },
     {
-      value: 47,
-      label: "DEVELOPMENT ",
-      color: "#A5B00E",
+      id: "python",
+      label: "python",
+      value: 429,
+      color: "hsl(111, 70%, 50%)",
     },
-    { value: 26, label: "MARKETING ", color: "#F6C165" },
+    {
+      id: "make",
+      label: "make",
+      value: 189,
+      color: "hsl(88, 70%, 50%)",
+    },
+    {
+      id: "css",
+      label: "css",
+      value: 448,
+      color: "hsl(76, 70%, 50%)",
+    },
   ];
   return (
     // <div className="max-w-7xl mx-auto px-5 my-20 lg:px-10 ">
@@ -32,43 +43,24 @@ const Tokenomics = () => {
     <ResponsivePie
       data={datas}
       margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
-      startAngle={-32}
-      innerRadius={0.4}
-      padAngle={3}
-      activeInnerRadiusOffset={13}
-      activeOuterRadiusOffset={25}
+      innerRadius={0.5}
+      padAngle={0.7}
+      cornerRadius={3}
+      activeOuterRadiusOffset={29}
+      borderWidth={1}
       borderColor={{
         from: "color",
-        modifiers: [["darker", "0"]],
+        modifiers: [["darker", "0.4"]],
       }}
-      enableArcLinkLabels={false}
-      arcLinkLabelsSkipAngle={45}
-      arcLinkLabelsTextOffset={0}
+      arcLinkLabelsSkipAngle={10}
       arcLinkLabelsTextColor="#333333"
-      arcLinkLabelsOffset={-24}
-      arcLinkLabelsDiagonalLength={0}
-      arcLinkLabelsStraightLength={0}
       arcLinkLabelsThickness={0}
       arcLinkLabelsColor={{ from: "color" }}
-      arcLabelsRadiusOffset={0.55}
+      arcLabelsRadiusOffset={0.35}
+      arcLabelsSkipAngle={10}
       arcLabelsTextColor={{
         from: "color",
-        modifiers: [["darker", "3"]],
-      }}
-      tooltip={function (e) {
-        var t = e.datum;
-        return (
-          <s style={{ color: t.color }}>
-            <d>id</d>
-            <c>{t.id}</c>
-            <d>value</d>
-            <c>{t.value}</c>
-            <d>formattedValue</d>
-            <c>{t.formattedValue}</c>
-            <d>color</d>
-            <c>{t.color}</c>
-          </s>
-        );
+        modifiers: [["darker", 2]],
       }}
       defs={[
         {
@@ -92,52 +84,68 @@ const Tokenomics = () => {
       ]}
       fill={[
         {
-          match: { id: "ruby" },
+          match: {
+            id: "ruby",
+          },
           id: "dots",
         },
         {
-          match: { id: "c" },
+          match: {
+            id: "c",
+          },
           id: "dots",
         },
         {
-          match: { id: "go" },
+          match: {
+            id: "go",
+          },
           id: "dots",
         },
         {
-          match: { id: "python" },
+          match: {
+            id: "python",
+          },
           id: "dots",
         },
         {
-          match: { id: "scala" },
+          match: {
+            id: "scala",
+          },
           id: "lines",
         },
         {
-          match: { id: "lisp" },
+          match: {
+            id: "lisp",
+          },
           id: "lines",
         },
         {
-          match: { id: "elixir" },
+          match: {
+            id: "elixir",
+          },
           id: "lines",
         },
         {
-          match: { id: "javascript" },
+          match: {
+            id: "javascript",
+          },
           id: "lines",
         },
       ]}
       legends={[
         {
           anchor: "bottom",
-          direction: "column",
+          direction: "row",
           justify: false,
-          translateX: 200,
-          translateY: -115,
+          translateX: 0,
+          translateY: 56,
           itemsSpacing: 0,
-          itemWidth: 10,
-          itemHeight: 25,
+          itemWidth: 100,
+          itemHeight: 18,
           itemTextColor: "#999",
           itemDirection: "left-to-right",
           itemOpacity: 1,
-          symbolSize: 19,
+          symbolSize: 18,
           symbolShape: "circle",
           effects: [
             {

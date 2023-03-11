@@ -70,7 +70,9 @@ const DemoBtn = ({ title, wFull, color, bgColor, dotColor }) => {
         ></span>
         <span
           style={{ background: bgColor }}
-          className={`  px-[100px] sm:px-[30px] lg:px-[30px] xl:px-[30px] md:px-[47px] py-[10px]   childBtn`}
+          className={`
+             ${wFull && "px-[100px]"}
+           px-[35px] sm:px-[30px] lg:px-[30px] xl:px-[30px] md:px-[47px] py-[10px]   childBtn`}
         >
           {title}
         </span>

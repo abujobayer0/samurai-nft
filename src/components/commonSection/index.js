@@ -42,21 +42,24 @@ const CommonSection = ({
           </div>
           <p className="text-[16px]  text-[#BCBCBC] mt-4">{paragraph}</p>
           {isThreeButton && (
-            <div className="flex px-2 py-2 h-fit flex-col md:flex-row justify-start  md:flex-wrap lg:flex-nowrap  gap-10 lg:gap-10  xl:gap-10 mt-10  items-start">
+            <div className="flex w-full px-2 py-2 h-fit flex-col md:flex-row justify-start  md:flex-wrap lg:flex-nowrap  gap-10 lg:gap-10  xl:gap-10 mt-10  items-center">
               <DemoBtn
                 title={"Learn more"}
                 bgColor={"#111111"}
                 color={"#FFFFFF"}
+                wFull
               />
               <DemoBtn
                 title={"Audit"}
                 bgColor={"#2461FF"}
                 dotColor={"#5182FF"}
+                wFull
                 color={"#FFFFFF"}
               />
               <DemoBtn
                 title={"kyc"}
                 bgColor={"#1CB219"}
+                wFull
                 dotColor={"#58E955"}
                 color={"#FFFFFF"}
                 green

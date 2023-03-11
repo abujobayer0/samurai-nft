@@ -1,9 +1,9 @@
 import React from "react";
 
-const DemoBtn = ({ title, color, bgColor, dotColor }) => {
+const DemoBtn = ({ title, wFull, color, bgColor, dotColor }) => {
   return (
-    <div className="w-fit  flex justify-center items-center">
-      <button className="w-fit  relative">
+    <div className={`  w-fit   flex justify-center items-center`}>
+      <button className={` w-fit  relative`}>
         <span
           className="w-[96%] h-[7px]   absolute left-[2%] -top-[7px] z-30"
           style={{ background: color }}

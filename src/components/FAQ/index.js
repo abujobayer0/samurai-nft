@@ -24,7 +24,7 @@ export default function Faq() {
   return (
     <div className={"max-w-7xl px-5 lg:px-10  mx-auto mb-32"}>
       <Title size={"40px"} head={"Frequently Aske"} sub={"d Question"} />
-      <div className="-mt-10">
+      <div className="md:-mt-10">
         <Accordion transition transitionTimeout={200}>
           <AccordionItem no={"001"} header="What is 0xSamurai?">
             0xSamurai is a blockchain-based game that allows players to collect
@@ -50,10 +50,7 @@ export default function Faq() {
             tokens. It can be used to purchase various items and upgrades within
             the game.
           </AccordionItem>
-          <AccordionItem
-            no={"005"}
-            header="How can I earn rewards in 0xSamurai?"
-          >
+          <AccordionItem no={"005"} header="How can I earn ?">
             There are several ways to earn rewards in 0xSamurai, including
             winning battles, completing quests, staking RYO tokens, summoning
             Samurais. Rewards can include rare NFTs, gold, and other valuable

@@ -64,7 +64,7 @@ const Tokenomics = () => {
     datasets: [
       {
         label: "Tokenomics",
-        data: [80, 120, 200, 350, 50, 60, 150],
+        data: [80, 120, 150, 400, 50, 60, 150],
         backgroundColor: [
           "#D17D00",
           "#0FCBD7",
@@ -76,33 +76,44 @@ const Tokenomics = () => {
         ],
         borderColor: ["#111111"],
         borderWidth: 7,
+        hoverOffset: 25,
       },
     ],
+  };
+  const option = {
+    plugins: {
+      title: {
+        display: true,
+        text: "Tokenomics",
+      },
+
+      elements: {
+        arc: {
+          // set the border radius here
+        },
+      },
+      legend: {
+        display: false,
+        position: "right",
+      },
+    },
+    cutoutPercentage: 70,
   };
   return (
     <div className="max-w-7xl mx-auto px-5 my-20 lg:px-10 ">
       <Title head={"T"} sub={"okenomics"} />
       <div className="grid grid-cols-1 lg:grid-cols-2 place-content-center  place-items-center w-full lg:gap-[100%">
-        <div className="w-full md:px-12  flex items-center justify-center">
+        <div className="w-full -fit relative  overflow-visible z-30 flex items-center justify-center">
           <Doughnut
-            data={data}
-            options={{
-              plugins: {
-                title: {
-                  display: true,
-                  text: "Tokenomics",
-                },
-                elements: {
-                  arc: {
-                    borderRadius: 40, // set the border radius here
-                  },
-                },
-                legend: {
-                  display: false,
-                  position: "right",
-                },
-              },
+            style={{
+              width: "100%",
+              height: "100%",
+              zIndex: 1,
+              padding: 50,
+              overflow: "visible",
             }}
+            data={data}
+            options={option}
           />
         </div>
         <div className="w-full relative  flex justify-end items-end">

@@ -58,7 +58,7 @@ const RoadMap = () => {
           <TemplePoint no={"4"} TempleIcon={TempleIcon} />
         </div>
         <div
-          className="absolute text-[7px] -top-12 right-[32%] md:text-[16px]  text-[#BDBDBD] flex flex-col justify-end items-end md:items-start
+          className="absolute text-[7px] -top-12 right-[37%] md:text-[16px]  text-[#BDBDBD] flex flex-col justify-end items-end md:items-start
           lg:text-[24px] lg:-top-10 md:left-5 md:top-44 lg:left-[25%]"
         >
           {phrase1.map((item) => (
@@ -68,7 +68,7 @@ const RoadMap = () => {
             </li>
           ))}
         </div>
-        <div className="absolute top-[38%] text-[7px] left-5  md:text-[16px] lg:text-[24px] text-[#BDBDBD] md:left-[40%] md:top-[10%] lg:top-[40%]  lg:left-[50px]">
+        <div className="absolute top-[32%] text-[7px] left-5  md:text-[16px] lg:text-[24px] text-[#BDBDBD] md:left-[40%] md:top-[10%] lg:top-[40%]  lg:left-[50px]">
           {phrase2.map((item) => (
             <li>{item}</li>
           ))}

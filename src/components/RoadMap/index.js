@@ -57,9 +57,15 @@ const RoadMap = () => {
         <div className="absolute top-[100%] lg:top-[40%] lg:right-[5%] md:top-[50%] right-[70%] md:right-[0%]">
           <TemplePoint no={"4"} TempleIcon={TempleIcon} />
         </div>
-        <div className="absolute text-[7px] -top-12 right-[32%] md:text-[16px]  text-[#BDBDBD]  lg:text-[24px] lg:-top-10 md:left-5 md:top-44 lg:left-[25%]">
+        <div
+          className="absolute text-[7px] -top-12 right-[32%] md:text-[16px]  text-[#BDBDBD] flex flex-col justify-end items-end md:items-start
+          lg:text-[24px] lg:-top-10 md:left-5 md:top-44 lg:left-[25%]"
+        >
           {phrase1.map((item) => (
-            <li>{item}</li>
+            <li className="flex items-center gap-1 md:gap-0">
+              <li className="opacity-0 md:opacity-100"></li> {item}{" "}
+              <li className=" md:hidden"></li>
+            </li>
           ))}
         </div>
         <div className="absolute top-[38%] text-[7px] left-5  md:text-[16px] lg:text-[24px] text-[#BDBDBD] md:left-[40%] md:top-[10%] lg:top-[40%]  lg:left-[50px]">

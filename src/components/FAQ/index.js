@@ -27,7 +27,7 @@ export default function Faq() {
         Frequen
         <span className="bg-[#EC1C24] pr-2 lg:pr-12">tly Asked Question</span>
       </h1>
-      <div className="md:-mt-10">
+      <div className="md:mt-10">
         <Accordion transition transitionTimeout={200}>
           <AccordionItem no={"001"} header="What is 0xSamurai?">
             0xSamurai is a blockchain-based game that allows players to collect

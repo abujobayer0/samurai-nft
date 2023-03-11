@@ -82,7 +82,7 @@ const Tokenomics = () => {
   return (
     <div className="max-w-7xl mx-auto px-5 my-20 lg:px-10 ">
       <Title head={"T"} sub={"okenomics"} />
-      <div className="grid grid-cols-1 lg:grid-cols-2 place-content-center  place-items-end w-full lg:gap-[100%">
+      <div className="grid grid-cols-1 lg:grid-cols-2 place-content-center  place-items-center w-full lg:gap-[100%">
         <div className="w-full md:px-12  flex items-center justify-center">
           <Doughnut
             data={data}
@@ -123,7 +123,7 @@ const Tokenomics = () => {
 
                     borderRadius: "100%",
                   }}
-                  className="w-[15px] h-[15px] lg:w-[30px] lg:h-[30px]"
+                  className="w-[15px] h-[15px] lg:w-[30px] px-4 lg:h-[30px]"
                 ></span>
                 <span className="mt-2 text-[22px] md:text-[30px]">
                   <span className="px-2">{data.value}%</span>

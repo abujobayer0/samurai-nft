@@ -1,8 +1,6 @@
 import React from "react";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
-import { Title } from "../";
-import { Chart } from "chart.js";
 
 const Tokenomics = () => {
   ChartJS.register(ArcElement, Tooltip, Legend);
@@ -76,7 +74,9 @@ const Tokenomics = () => {
         ],
         borderColor: ["#111111"],
         borderWidth: 7,
-        hoverOffset: 30,
+        hoverOffset: 60,
+        width: "100%",
+        height: "fit%",
       },
     ],
   };
@@ -97,7 +97,7 @@ const Tokenomics = () => {
         position: "right",
       },
     },
-    cutoutPercentage: 70,
+    cutoutPercentage: 10,
   };
   return (
     <div className="max-w-7xl mx-auto px-5 my-20 lg:px-10 ">
@@ -105,21 +105,21 @@ const Tokenomics = () => {
         T<span className="bg-[#EC1C24] pr-2 lg:pr-12">okenomics</span>
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 place-content-center  place-items-center w-full lg:gap-[100%">
-        <div className="w-full -fit relative  overflow-visible z-30 flex items-center justify-center">
+        <div className="w-full h-full relative  overflow-visible z-30 flex items-center justify-center">
           <Doughnut
             style={{
               width: "100%",
               height: "100%",
-              zIndex: 1,
+              zIndex: -1,
               padding: 50,
-              overflow: "visible",
+              overflow: "none",
             }}
             data={data}
             options={option}
           />
         </div>
         <div className="w-full relative  flex justify-end items-end">
-          <div className="w-[400px] flex justify-end  lg:items-start flex-col   gap-4">
+          <div className="w-[400px] flex justify-end items-start md:items-center lg:items-start flex-col   gap-4">
             {datas.map((data) => (
               <div
                 className="w-fit"
@@ -133,7 +133,6 @@ const Tokenomics = () => {
                 <span
                   style={{
                     background: data.color,
-
                     borderRadius: "100%",
                   }}
                   className="w-[15px] h-[15px] lg:w-[30px] py-4 md:py-0 px-4 lg:h-[30px]"

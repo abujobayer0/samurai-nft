@@ -5,7 +5,7 @@ const StepsSection = () => {
   return (
     <div className="w-full  transition duration-150 ease-in-out flex flex-col justify-start items-start  bg-transparent">
       <h1 className="clash-700  text-start  leading-[78px] text-[30px] sm:text-[40px]  md:text-[45px] lg:text-[60px]">
-        H<span className="bg-[#EC1C24] pr-8 lg:pr-12">ierarchy</span>
+        H<span className="bg-[#EC1C24] pr-2 lg:pr-12">ierarchy</span>
       </h1>
 
       <div className="relative mt-[50px] md:mt-[100px] max-w-7xl">

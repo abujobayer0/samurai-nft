@@ -23,7 +23,10 @@ const AccordionItem = ({ header, no, ...rest }) => (
 export default function Faq() {
   return (
     <div className={"max-w-7xl px-5 lg:px-10  mx-auto mb-32"}>
-      <Title size={"40px"} head={"Frequently Aske"} sub={"d Question"} />
+      <h1 className="clash-700  text-start   text-[22px] sm:text-[40px]  md:text-[45px] lg:text-[60px]">
+        Frequen
+        <span className="bg-[#EC1C24] pr-2 lg:pr-12">tly Asked Question</span>
+      </h1>
       <div className="md:-mt-10">
         <Accordion transition transitionTimeout={200}>
           <AccordionItem no={"001"} header="What is 0xSamurai?">

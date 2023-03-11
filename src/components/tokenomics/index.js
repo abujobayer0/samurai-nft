@@ -101,7 +101,9 @@ const Tokenomics = () => {
   };
   return (
     <div className="max-w-7xl mx-auto px-5 my-20 lg:px-10 ">
-      <Title head={"T"} sub={"okenomics"} />
+      <h1 className="clash-700  text-start  leading-[78px] text-[30px] sm:text-[40px]  md:text-[45px] lg:text-[60px]">
+        T<span className="bg-[#EC1C24] pr-2 lg:pr-12">okenomics</span>
+      </h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 place-content-center  place-items-center w-full lg:gap-[100%">
         <div className="w-full -fit relative  overflow-visible z-30 flex items-center justify-center">
           <Doughnut

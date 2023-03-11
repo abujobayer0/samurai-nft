@@ -13,7 +13,7 @@ const HeroSection = () => {
             </h1>
           </div>
         </h1>
-        <p className="uppercase text-[12px] sm:text-[16px] text-[#BCBCBC]  mt-[25px] text-center leading-[30px]">
+        <p className="uppercase text-[14px] sm:text-[16px] text-[#BCBCBC]  mt-[25px] text-center leading-[30px]">
           Enter the world of 0xSamurai, where ordinary warriors are
           non-existent, and only legendary samurais who have mastered the art of
           combat exist. They don't just fight for glory but for the rarest and

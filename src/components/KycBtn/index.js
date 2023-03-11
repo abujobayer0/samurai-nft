@@ -73,7 +73,7 @@ const KycBtn = ({ color, bgColor, title, dotColor }) => {
             style={{ background: bgColor }}
             className={`
             
-           px-[130px] sm:px-[30px] lg:px-[30px] xl:px-[30px] md:px-[47px] py-[10px]   childBtn`}
+           px-[144px] sm:px-[30px] lg:px-[30px] xl:px-[30px] md:px-[47px] py-[10px]   childBtn`}
           >
             {title}
           </span>

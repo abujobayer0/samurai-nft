@@ -32,20 +32,22 @@ const CommonSection = ({
         -rotate-45 */}
         <div className="section   section-2">
           {subTitle && (
-            <h3 className="clash-700 text-[28px] lg:text-[38px]">{subTitle}</h3>
+            <h3 className="clash-700 text-[25px] lg:text-[38px]">{subTitle}</h3>
           )}
-          <h1 className="clash-700 leading-[78px] text-[30px] sm:text-[40px]  md:text-[45px] lg:text-[60px]">
+          <h1 className="clash-700 leading-[78px] text-[35px] sm:text-[40px]  md:text-[45px] lg:text-[60px]">
             {title}
           </h1>
           <div className="relative    w-full flex flex-col  mx-auto ">
             <div className="bg-primary-text  w-[200px] sm:w-[270px] h-[35px] lg:w-[307px] md:w-[270px] md:h-[52px] lg:h-[62px] " />
-            <h1 className=" bg-transparent clash-700 leading-[78px] text-[30px] sm:text-[40px]  md:text-[45px]  lg:text-[60px]  absolute -bottom-2 md:bottom-2 lg:bottom-2">
+            <h1 className=" bg-transparent clash-700 leading-[78px] text-[35px] sm:text-[40px]  md:text-[45px]  lg:text-[60px]  absolute -bottom-2 md:bottom-2 lg:bottom-2">
               {Designtitle}
             </h1>
           </div>
-          <p className="text-[16px]  text-[#BCBCBC] mt-4">{paragraph}</p>
+          <p className="text-[14px] sm:text-[16px]  text-[#BCBCBC] mt-4">
+            {paragraph}
+          </p>
           {isThreeButton && (
-            <div className="flex w-full px-2 py-2 h-fit flex-col md:flex-row justify-start  md:flex-wrap lg:flex-nowrap  gap-10 lg:gap-10  xl:gap-10 mt-10  items-center">
+            <div className="flex min-w-full  py-2 h-fit flex-col md:flex-row justify-start  md:flex-wrap lg:flex-nowrap  gap-10 lg:gap-10  xl:gap-10 mt-10  items-center">
               <LearnMoreBtn
                 title={"Learn more"}
                 bgColor={"#111111"}

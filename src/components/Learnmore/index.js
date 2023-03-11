@@ -3,7 +3,7 @@ import React from "react";
 const LearnMoreBtn = ({ color, bgColor, title, dotColor }) => {
   return (
     <div>
-      <div className={`w-full  md:w-fit   flex justify-center items-center`}>
+      <div className={`  md:w-fit   flex justify-center items-center`}>
         <button className={` w-full md:w-fit  relative`}>
           <span
             className="w-[96%] h-[7px]   absolute left-[2%] -top-[7px] z-30"
@@ -73,7 +73,7 @@ const LearnMoreBtn = ({ color, bgColor, title, dotColor }) => {
             style={{ background: bgColor }}
             className={`
             
-           px-[100px] sm:px-[30px] lg:px-[30px] xl:px-[30px] md:px-[47px] py-[10px]   childBtn`}
+           px-[120px] sm:px-[30px] lg:px-[30px] xl:px-[30px] md:px-[47px] py-[10px]   childBtn`}
           >
             {title}
           </span>

@@ -58,7 +58,7 @@ const RoadMap = () => {
           <TemplePoint no={"4"} TempleIcon={TempleIcon} />
         </div>
         <div
-          className="absolute text-[7px] -top-12 right-[37%] md:text-[16px]  text-[#BDBDBD] flex flex-col justify-end items-end md:items-start
+          className="absolute text-[7.7px] -top-14 right-[38%] md:text-[16px]  text-[#BDBDBD] flex flex-col justify-end items-end md:items-start
           lg:text-[24px] lg:-top-10 md:left-5 md:top-44 lg:left-[25%]"
         >
           {phrase1.map((item) => (
@@ -68,12 +68,12 @@ const RoadMap = () => {
             </li>
           ))}
         </div>
-        <div className="absolute top-[32%] text-[7px] left-5  md:text-[16px] lg:text-[24px] text-[#BDBDBD] md:left-[40%] md:top-[10%] lg:top-[40%]  lg:left-[50px]">
+        <div className="absolute top-[32%] text-[7.7px] left-5  md:text-[16px] lg:text-[24px] text-[#BDBDBD] md:left-[40%] md:top-[10%] lg:top-[40%]  lg:left-[50px]">
           {phrase2.map((item) => (
             <li>{item}</li>
           ))}
         </div>
-        <div className="absolute w-fit top-[45%] right-4  text-[7px]  md:text-[16px] lg:text-[24px] text-[#BDBDBD] md:top-[74%] md:left-[30%] lg:top-[75%]  lg:left-[37%]">
+        <div className="absolute w-fit top-[47%] right-4  text-[7.7px]  md:text-[16px] lg:text-[24px] text-[#BDBDBD] md:top-[74%] md:left-[30%] lg:top-[75%]  lg:left-[37%]">
           {phrase3.map((item) => (
             <h1 className="flex w-fit justify-start items-center gap-2 lg:gap-4">
               {" "}
@@ -82,7 +82,7 @@ const RoadMap = () => {
             </h1>
           ))}
         </div>
-        <div className="absolute w-fit  bottom-0 left-5 text-[7px] md:text-[16px] lg:text-[24px] text-[#BDBDBD] md:top-[35%] md:left-[50%] lg:top-[20%]  lg:left-[65%]">
+        <div className="absolute w-fit  bottom-0 left-5 text-[7.7px] md:text-[16px] lg:text-[24px] text-[#BDBDBD] md:top-[35%] md:left-[50%] lg:top-[20%]  lg:left-[65%]">
           {phrase4.map((item) => (
             <h1 className="flex w-fit justify-start items-center gap-2 md:gap-2 lg:gap-4">
               {" "}

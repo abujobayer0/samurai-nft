@@ -112,7 +112,7 @@ const NftSection = () => {
               }
             />
           </div>
-          <div className=" mt-80 sm:mt-52 lg:mt-10 ">
+          <div className=" xs:mt-80  sm:mt-52 lg:mt-10 ">
             <StepsSection />
           </div>
         </div>

@@ -21,11 +21,11 @@ const StepsSection = () => {
           <span>hero</span>
           <span>0.5bnb</span>
         </div>
-        <div className="uppercase left-[41%] top-[10%] p-4 lg:top-[36%] sm:top-[24%]  md:top-[34%] xl:top-[35%] absolute  text-[8px] sm:text-sm ron-text-gra md:text-[26px] flex flex-col gap-4 sm:gap-10 lg:gap-16   lg:text-[36px]">
+        <div className="uppercase left-[41%] top-[16%] p-4 lg:top-[36%] sm:top-[24%]  md:top-[34%] xl:top-[35%] absolute  text-[8px] sm:text-sm ron-text-gra md:text-[26px] flex flex-col gap-4 sm:gap-10 lg:gap-16   lg:text-[36px]">
           <span>ronin</span>
           <span>25 bnb</span>
         </div>
-        <div className="uppercase  right-[25%] xs:top-[50%] lg:right-[27%] xl:right-[28%] p-4 top-[40%] lg:top-[64%] sm:top-[50%]  md:top-[60%] xl:top-[62%] absolute  text-[8px] sm:text-sm green-text-gra md:text-[26px] flex flex-col gap-4 sm:gap-10 lg:gap-16  lg:text-[36px]">
+        <div className="uppercase  right-[25%] top-[50%] lg:right-[27%] xl:right-[28%] p-4  lg:top-[64%] sm:top-[50%]  md:top-[60%] xl:top-[62%] absolute  text-[8px] sm:text-sm green-text-gra md:text-[26px] flex flex-col gap-4 sm:gap-10 lg:gap-16  lg:text-[36px]">
           <span>kensi</span>
           <span>.1bnb</span>
         </div>

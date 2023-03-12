@@ -135,9 +135,9 @@ const Tokenomics = () => {
                     background: data.color,
                     borderRadius: "100%",
                   }}
-                  className="w-[15px] h-[15px] lg:w-[30px] py-4 md:py-0 px-4 lg:h-[30px]"
+                  className="w-[19px] h-[19px] lg:w-[30px] py-4 md:py-0 px-4 lg:h-[30px]"
                 ></span>
-                <span className="mt-2 text-[22px] md:text-[30px]">
+                <span className="mt-2 text-[16px] md:text-[30px]">
                   <span className="px-2">{data.value}%</span>
                   <span>{data.title}</span>
                 </span>

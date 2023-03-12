@@ -1,8 +1,12 @@
 import React from "react";
 
-const KycBtn = ({ color, bgColor, title, dotColor }) => {
+const KycBtn = ({ color, bgColor, hiddenSm, title, dotColor }) => {
   return (
-    <div className={` w-[95%] md:w-fit   flex justify-center items-center`}>
+    <div
+      className={` w-[95%] md:w-fit  ${
+        hiddenSm ? "hidden md:flex" : "flex"
+      } justify-center items-center`}
+    >
       <button className={` w-[100%] md:w-fit  relative`}>
         <span
           className="w-[96%] h-[7px]   absolute left-[2%] -top-[7px] z-30"

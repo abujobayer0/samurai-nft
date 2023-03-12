@@ -27,8 +27,10 @@ import roadMap from "./roadMap.png";
 import marketwatch from "./marketwatch.png";
 import dexview from "./dexview.png";
 import coinmarketcap from "./coinmarketcap.png";
+import stepsMobile from "./stepsMobile.png";
 export {
   Logo,
+  stepsMobile,
   coinmarketcap,
   marketwatch,
   dexview,

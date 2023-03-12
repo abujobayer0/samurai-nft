@@ -58,6 +58,7 @@ const CommonSection = ({
                 bgColor={"#2461FF"}
                 dotColor={"#5182FF"}
                 wFull
+                hiddenSm
                 color={"#FFFFFF"}
               />
               <KycBtn
@@ -67,7 +68,25 @@ const CommonSection = ({
                 dotColor={"#58E955"}
                 color={"#FFFFFF"}
                 green
+                hiddenSm
               />
+              <div className="w-[96%] gap-6 md:hidden flex">
+                <AuditBtn
+                  title={"Audit"}
+                  bgColor={"#2461FF"}
+                  dotColor={"#5182FF"}
+                  wFull
+                  color={"#FFFFFF"}
+                />
+                <KycBtn
+                  title={"kyc"}
+                  bgColor={"#1CB219"}
+                  wFull
+                  dotColor={"#58E955"}
+                  color={"#FFFFFF"}
+                  green
+                />
+              </div>
             </div>
           )}
         </div>

@@ -4,7 +4,7 @@ import { DemoBtn } from "../";
 const StepsSection = () => {
   return (
     <>
-      <div className="w-full  transition duration-150 ease-in-out hidden md:flex flex-col justify-start items-start  bg-transparent">
+      <div className="w-full  transition duration-150 ease-in-out hidden sm:flex flex-col justify-start items-start  bg-transparent">
         <h1 className="clash-700  text-start  leading-[78px] text-[30px] sm:text-[40px]  md:text-[45px] lg:text-[60px]">
           H<span className="bg-[#EC1C24] pr-2 lg:pr-12">ierarchy</span>
         </h1>
@@ -39,7 +39,7 @@ const StepsSection = () => {
           <DemoBtn title={"learn more"} bgColor={"#111111"} color={"#fff"} />
         </div>
       </div>
-      <div className="w-full  transition duration-150 ease-in-out md:hidden flex  flex-col justify-start items-start  bg-transparent">
+      <div className="w-full  transition duration-150 ease-in-out sm:hidden flex  flex-col justify-start items-start  bg-transparent">
         <h1 className="clash-700  text-start  leading-[78px] text-[30px] sm:text-[40px]  md:text-[45px] lg:text-[60px]">
           H<span className="bg-[#EC1C24] pr-2 lg:pr-12">ierarchy</span>
         </h1>

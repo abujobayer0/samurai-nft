@@ -334,8 +334,59 @@ body {
   background: linear-gradient(92.72deg, #3fbf1b -3.17%, #cfa908 96.95%);
 }
 .mizu {
-  /* background: linear-gradient(92.72deg, #3fbf1b -3.17%, #cfa908 96.95%); */
-  background-color: #a9af0d;
+  background: linear-gradient(92.72deg, #3fbf1b -3.17%, #cfa908 96.95%);
+  /* background-color: #a9af0d; */
+}
+.topLeftMizu {
+  background: #46be1a !important;
+}
+.bottomLeftMizu {
+  background: #48be1a !important;
+}
+.topRightMizu {
+  background: #a6b00e !important;
+}
+.bottomRightMizu {
+  background: #7fb513 !important;
+}
+
+.topLeftKaze {
+  background: #e29901 !important;
+}
+.bottomLeftKaze {
+  background: #f6b900 !important;
+}
+.topRightKaze {
+  background: #d88901 !important;
+}
+.bottomRightKaze {
+  background: #e9a401 !important;
+}
+
+.topLeftTSuchi {
+  background: linear-gradient(to bottom left, #b6baf6, #5f68eb) !important;
+}
+.bottomLeftTSuchi {
+  background: linear-gradient(to bottom left, #b6baf6, #5f68eb) !important;
+}
+.topRightTSuchi {
+  background: linear-gradient(to bottom left, #9097f1, #ffffff) !important;
+}
+.bottomRightTSuchi {
+  background: #9ea4f3 !important;
+}
+
+.topLeftDenki {
+  background: linear-gradient(to bottom left, #f4c16a, #c6bfb2) !important;
+}
+.bottomLeftDenki {
+  background: linear-gradient(to bottom left, #dbc092, #c7bfb1) !important;
+}
+.topRightDenki {
+  background: linear-gradient(to bottom left, #edc173, #eec173) !important;
+}
+.bottomRightDenki {
+  background: linear-gradient(to bottom left, #edc174, #d9c093) !important;
 }
 
 .KazeBtn::before {
@@ -345,8 +396,9 @@ body {
   background: linear-gradient(85.73deg, #fabf00 -5.28%, #c36801 95.55%);
 }
 .kaze {
-  /* background: linear-gradient(85.73deg, #fabf00 -5.28%, #c36801 95.55%); */
-  background-color: #dc8f01;
+  background: linear-gradient(85.73deg, #fabf00 -5.28%, #c36801 95.55%);
+  /* background-color: #dc8f01; */
+  box-shadow: none;
 }
 
 .TsuchiBtn::before {
@@ -356,8 +408,8 @@ body {
   background: linear-gradient(87.44deg, #5a64ea -0.29%, #ffffff 92.12%);
 }
 .tSuchi {
-  /* background: linear-gradient(87.44deg, #5a64ea -0.29%, #ffffff 92.12%); */
-  background-color: #a4a9f4;
+  background: linear-gradient(87.44deg, #5a64ea -0.29%, #ffffff 92.12%);
+  /* background-color: #a4a9f4; */
 }
 
 .DenkiBtn::before {
@@ -377,14 +429,14 @@ body {
   );
 }
 .denki {
-  /* background: linear-gradient(
+  background: linear-gradient(
     267.25deg,
     #edc174 1.12%,
     #f5c167 57.43%,
     #c4bfb5 100.31%
-  ); */
+  );
 
-  background-color: #e1c086;
+  /* background-color: #e1c086; */
 }
 
 /* i am working on button color now */

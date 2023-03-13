@@ -84,7 +84,9 @@ const RoadMap = () => {
         </div>
         <div className="absolute w-fit  bottom-0 left-5 text-[7.7px] md:text-[16px] lg:text-[24px] text-[#BDBDBD] md:top-[35%] md:left-[50%] lg:top-[20%]  lg:left-[65%]">
           {phrase4.map((item) => (
-            <h1 className="flex w-fit justify-start items-center gap-2 md:gap-2 lg:gap-4">
+            <h1
+              className={`flex  w-[200px] md:w-fit justify-start items-center gap-2 md:gap-2 lg:gap-4`}
+            >
               {" "}
               <span className=" w-[4px] md:w-[10px] bg-[#BDBDBD] h-[4px] md:h-[10px] rounded-full "></span>{" "}
               {item}
